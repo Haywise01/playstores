@@ -424,10 +424,10 @@ width: 100%;
     gap:50px ;
     cursor: pointer;
    }
-   .my-apps:hover{
+   /* .my-apps:hover{
     color: green;
     background-color: green;
-   }
+   } */
    .section-fifteen{
     width: 95%;
     margin: auto;
