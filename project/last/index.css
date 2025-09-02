@@ -106,6 +106,8 @@ border: thin solid black;
     overflow: hidden;
     margin-top: 15px;
     cursor: pointer;
+     overflow-x: scroll;
+    scrollbar-width: none;
 }
 .sec-two button:hover{
     color: green;
@@ -188,6 +190,11 @@ border: thin solid black;
 .sec-three h4{
     font-size: 22px;
     font-family: google sans, Arial, Helvetica, sans-serif;
+}
+.fifth a{
+    display: flex;
+    text-align: center;
+    gap: 3px;
 }
 
 /* section-four */

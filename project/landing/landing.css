@@ -104,7 +104,7 @@ border: thin solid black;
     margin-top: 20px;
     cursor: pointer;
      overflow-x: scroll;
- scrollbar-width: none;
+    scrollbar-width: none;
 }
 .sec-two button:hover{
     color: green;
