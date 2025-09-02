@@ -330,6 +330,11 @@ object-fit: cover;
     margin: auto;
     visibility: hidden;
    }
+   .ps a{
+    text-decoration: none;
+    color: black;
+   }
+   
    .my-apps {
     margin-top: 20px;
     display: flex;
@@ -343,6 +348,13 @@ object-fit: cover;
     color: green;
     background-color: green;
    }
+
+   .my-apps a{
+    text-decoration: none;
+    color: black;
+    
+   }
+   
    .section-fifteen{
     width: 95%;
     margin: auto;

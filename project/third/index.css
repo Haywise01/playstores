@@ -260,6 +260,14 @@ visibility: visible;
     margin: auto;
     }
 
+    .my-apps a{
+        text-decoration: none;
+        color: black;
+    }
+    .ps a{
+        text-decoration: none;
+        color: black;
+    }
     
 
     .application{
