@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.sec-one{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+   
+}
+.sec-one p{
+font-size: 24px;
+}
+.section-one{
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+   /* box-shadow: 0px 4px 6px 0px; */
+   
+   padding-inline: 1em;
+   height: 50px;
+    top: 0;
+    z-index: 2;
+    position: sticky;
+    background-color: white;
+}
+.section-two{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+.sec-two{
+    line-height: 40px;
+}
+.section-three {
+   margin: auto;
+   width: 90%;
+}
+.text-three{
+    margin-top: 25px;
+    line-height: 25px;
+    font-family: google sans , Arial, Helvetica, sans-serif ;
+}
+.sec-four h2{
+    margin-top: 30px;
+}
+.section-four{
+    width: 90%;
+    margin: auto;
+}
+.text-four{
+    margin-top: 25px;
+    line-height: 25px;
+    font-family:Google sans , Arial, Helvetica, sans-serif;
+}
+.section-five{
+    width: 90%;
+    margin: auto;
+}
+.text-five{
+    line-height: 25px;
+    font-family: Google sans, Arial, Helvetica, sans-serif;
+}
+.section-six{
+    width: 90%;
+    margin: auto;
+}
+.sec-six{
+    margin-top: 25px;
+}
+.text-six{
+    margin-top: 25px;
+    line-height: 25px;
+    font-family:Google sans,  Arial, Helvetica, sans-serif;
+}
+.section-seven{
+    width: 90%;
+    margin: auto;
+}
+.text-seven{
+    line-height: 25px;
+    font-size: 16px;
+    font-family: Google sans , Arial, Helvetica, sans-serif;
+
+}
+/* .textt-six{
+    text-align: center;
+    align-items: center;
+} */
+.lst{
+    display: flex;
+    gap: 30px;
+    padding-inline: em;
+    /* display: inline; */
+}
+.finall{
+    display: flex;
+    /* justify-content: space-between; */
+        width: 100%;
+        gap: 50%;
+       justify-content: ;
+        
+}
+
+
+.final{
+    background-color: whitesmoke;
+    height: 90px;
+    margin: auto;
+    width: 100%;
+
+    text-align: center;
+    margin-top: 40px;
+    padding-inline: 4em;
+    padding-top: 30px;
+    /* padding: 0px; */
+    }
+    
+
+     @media (max-width:729px) {
+        .eng{
+            display: block;
+           display: flex;
+            width: 100%;
+        }
+        .lst p{
+            /* width: 50%;
+            display: flex;
+            display: block; */
+            font-size: 16px;
+            /* width: 100%; */
+            display: inline block;
+        }
+        .final{
+            height: auto;
+           padding-inline: 1em;
+        }
+        .finall{
+             display: flex;
+            /* display: block; */
+            flex-direction: column;
+         padding-inline: 1em; */
+             
+        }
+    }

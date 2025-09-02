@@ -1,0 +1,623 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+.top{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+.top-right{
+    display: flex;
+    text-align: center;
+    gap: 25px;   
+    align-items: center;
+}
+.topp p{
+    font-size: 24px;
+    font-family: Google sans, Arial, Helvetica, sans-serif;
+}
+.app{
+    display: flex;
+    gap: 20px;
+}
+.ball{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background-color: green;
+text-align: center;
+color: white;
+align-items: center;
+}
+/* section */
+
+.app::before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    border-radius: 5px;
+    top: 60px;
+    background-color: green;
+    visibility: visible;
+}
+.app:hover::before{
+visibility: visible;
+}
+.top{
+    position: relative;
+    background-color: white;
+}
+.question{
+ width: 19px;
+height: 19px;
+border-radius: 50%;
+text-align: center;
+color: black;
+border: thin solid black;
+
+}
+.section-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 2;
+     padding: 12px;
+    margin-top: 10px;
+    
+    
+}
+.section-one p{
+    display: inline-block;
+}
+.app a{
+    color: black;
+}
+
+.section-two{
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 20px;
+    width: 95%;
+   margin: auto;
+   z-index: 1;
+   border: none;
+   cursor: pointer;
+}
+.sec-two{
+    flex-direction: row;
+   display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.sec-two button:hover{
+    color: green;
+}
+.first button{
+   width: 130px;
+   height:30px ;
+   border-radius: 15px;
+   align-items: center;
+   gap: 20px;
+   padding: 10px;
+    display: flex;
+    border: transparent;   
+}
+.second button{
+   width: 100px;
+   height: 30px;
+   border-radius: 15px;
+   align-items: center;
+   gap: 10px;
+   padding: 10px;
+    display: flex;
+    border: transparent;
+}
+.third button{
+   width: 100px;
+   height: 30px;
+   border-radius: 15px;
+   align-items: center;
+   gap: 20px;
+   padding: 10px;
+    display: flex;
+    border: transparent;
+}
+.fourth button{
+   width: 70px;
+   height: 30px;
+   gap: 20px;
+   border-radius: 15px;
+   align-items: center;   
+   padding: 10px;
+    display: flex;
+    border: transparent;
+}
+.fifth button{
+   width: 120px;
+   height: 30px;
+   gap: 10px;
+   border-radius: 15px;
+   align-items: center;   
+   padding: 10px;
+    display: flex;
+    border: transparent;
+}
+.sixty button{
+   width: 70px;
+   height: 30px;
+   border-radius: 15px;
+   align-items: center;   
+   padding: 10px;
+    display: flex;
+    border: transparent;
+}
+.fifth a{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    gap: 10px;
+    color: black;
+}
+.section-two span{
+    font-size: 15px;
+}
+
+/* section three*/
+.section-three{
+   width: 95%;
+   margin: auto;    
+    margin-top: 30px;
+    padding-left: 20px;
+    border: none;
+}
+
+.sec-three{
+    width: 50%;
+}
+.sec-three h4{
+    font-size: 22px;
+    font-family: google sans, Arial, Helvetica, sans-serif;
+}
+
+/* section-four */
+.section-four{
+    width: 93%;
+    margin: auto;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    
+}
+.my-view{
+    margin-top: 30px;
+    display: flex;
+    column-gap: 20px;
+}
+.word p{
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.my-picture img{
+width: 175px;
+height: 175px;
+border-radius: 35px;
+
+}
+.picture-one{    
+    line-height: 25px;
+   
+    border-radius: 10px;
+}
+.picture-one:hover{
+     background-color: whitesmoke;
+     padding: 10px;
+}
+.word span{
+    font-size: 15px;
+}
+
+.section-five{
+   width: 95%;
+   margin: auto;
+}
+.sec-five{   
+    margin-top: 30px;
+    padding-left: 20px;
+    border: none;
+}
+
+/* section six */
+.section-six{
+   width: 95%;
+   margin: auto;
+}
+.sec-six{
+    border: thin solid black;
+    margin-top: 30px;
+    padding-left: 20px;
+    border: none;
+}
+.section-eight{
+   width: 95%;
+   margin: auto;
+}
+.sec-eight{
+    border: thin solid black;
+    margin-top: 30px;
+    padding-left: 20px;
+    border: none;
+}
+.section-ten{
+   width: 95%;
+   margin: auto;
+}
+.sec-ten{
+    border: thin solid black;
+    margin-top: 30px;
+    padding-left: 20px;
+    border: none;
+}
+.section-twelve{  
+     position: relative;
+     width: 95%;
+      margin: auto;     
+}
+.space-one{
+    margin-top: 30px;   
+    height: 250px;   
+     padding: 60px 60px;
+     position: relative;    
+    border-radius: 20px;
+     background-color: rgba(244, 180, 0, 1);
+}
+.iwatch{
+    position: absolute;
+    top: 0;
+     right: 10px;
+}
+.iwatch img{
+    /* width: 100%;
+    height: 290px;
+    border-radius: 15px;
+    margin-top: 30px; */
+   height: 250px;
+}
+/* .iwatch-text{
+    position: absolute;
+    top: 100px;    
+       margin-left: 40px;
+} */
+
+.iwatch-text h4{
+font-size: 30px;
+}
+.iwatch-text p{
+    font-size: 18px;
+    line-height: 50px;
+}
+
+/* section thirteen */
+.section-thirteen{   
+     margin: auto;
+    width: 95%;
+            
+}
+
+.space{
+    background-color: #4285f4; 
+     padding: 60px 60px;
+     position: relative;    
+    border-radius: 20px;
+    height: 250px;
+    margin-top: 30px;
+}
+
+.iwatchh{
+     position: absolute;
+    top: 0;
+     right: 10px;
+}
+
+.iwatchh img{
+     height: 250px;
+    
+}
+.iwatch-textt{
+    /* position: absolute;
+    top: 100px;    
+    margin-left: 40px; */
+}
+.iwatch-textt h4{
+font-size: 40px;
+width: 100%;
+}
+.iwatch-textt p{
+    font-size: 18px;
+    line-height: 50px;
+}
+/* section forteen */
+.sectionn-forteen{
+    width: 95%;
+    margin: auto;
+}
+.googleplay{
+     font-size: 14px;
+     font-family: google sans;
+ }
+.sec-fort{
+    display: flex;
+   gap: 200px;
+   margin-top: 40px;
+   line-height: 30px;
+}
+.line{
+    margin-top: 70px;
+   
+   }
+   .linee{
+     width: 95%;
+    margin: auto;
+   }
+
+/* section fifteen */
+.ps p{
+    display: inline;    
+        
+     }
+    .ps{
+     display: flex;
+    gap: 20px;
+    }
+    
+   .sec-fifth{
+    display: flex;
+    margin-top: 30px;    
+    justify-content: space-between;
+   }
+   .section-fifteen{
+    width: 95%;
+    margin: auto;
+   }
+
+   .application{
+    width: 95%;
+    margin: auto;
+    visibility: hidden;
+   }
+   .my-apps {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    gap:50px ;
+    cursor: pointer;
+   }
+   .my-apps:hover{
+    color: green;
+    background-color: green;
+   }
+   .section-fifteen{
+    width: 95%;
+    margin: auto;
+   }
+   
+
+
+
+ @media (max-width:840px) {
+        .app p{
+            display: none;
+        }
+        .container{
+            width: 100%;
+        }
+        .section-two{
+            width:100% ;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        .section-two button{
+            width: 100%;
+            display: flex;
+        }
+        .sec-two button{
+            width: 100%;
+        }
+
+        .sec-three h4{
+            width: 100%;
+            font-size: 18px;
+
+        }
+        .sec-three p{
+            font-size: 14px;
+        }
+
+        .sec-five h2{
+            font-size: 18px;
+        }
+        .sect-five p{
+            font-size: 14px;
+        }
+         .my-picture img{
+        width: 136px;
+        height: 136px;
+        border-radius: 10px;
+
+        }
+       
+        .my-view{
+            column-gap: 10px;
+        }
+        .word p{
+        font-size: 13px;
+        width: 100%;
+        /* line-height: -5px; */
+        }
+        .word span{
+            font-size: 5px;
+        }
+/* section-thirteen */
+    /* .iwatchh img{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    margin-top: 30px;    
+   
+} */
+/* .iwatch-textt{
+    position: absolute;
+    top: 70px;   
+    margin-left: 40px;
+} */
+
+   /* .iwatch img{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    margin-top: 30px;    
+   
+}  */
+
+/* .iwatch-text{
+    position: absolute;
+    top: 70px;    
+ margin-left: 40px;
+} */
+
+.application{
+    width: 95%;
+    margin: auto;
+    visibility: visible;
+   }
+   .my-apps {
+    margin-top: 20px;
+    display: flex;
+    gap:50px ;
+   }
+
+   .sec-fifth{
+        width: 100%;
+        display: flex;
+        display: block;
+        }
+.ps{
+     /* display: block; */
+     display: grid;
+     width: 100%;
+     grid-template-columns: 1fr 1fr;
+     }
+
+     .sectionn-forteen{
+            width: 80%;
+            margin: auto;
+        }
+        .sec-fort{           
+            display: block;
+             width: 100%;
+        }
+        .kids{
+            margin-top: 20px;
+        }
+
+    .section-fifteen{
+    width: 85%;
+    margin: auto;
+   }
+
+}
+
+
+
+
+     @media (max-width:320px) {
+        .topp p{
+            font-size: 17px;
+            width: 100%;
+            flex-wrap: nowrap;
+        }
+        .section-one{
+            /* width:80% ; */
+            /* margin: auto; */
+            margin-left: 20px;
+        }
+        .section-two button{
+            width: 100%;
+        }
+        .sec-three{
+            font-size: 16px;
+            width: 100%;
+            display: inline-block;
+            /* display: block; */
+        }
+
+        .my-picture img{
+        width: 82px;
+        height: 82px;
+        border-radius: 30px;
+
+        }
+        .picture-one{        
+        line-height: 25px;
+        
+        }
+        .my-view{
+            column-gap: 10px;
+        }
+        .app::before{
+        visibility: hidden;
+    }
+    .section-two{
+        width: 90%;
+        margin: auto;
+    }
+    .section-four{
+        width: 85%;
+        margin: auto;
+    }
+    .section-thirteen , .section-twelve{
+        width: 85%;
+        margin: auto;
+    }
+    }
+     @media (max-width: 338px) {
+            .iwatchh img{
+              height: 250px;
+             object-fit: cover;
+            }
+            .iwatch img{
+                object-fit: cover;
+                height: 250px;
+                width: 100%;
+            }
+            .space{
+                padding: 20px 20px;
+            }
+            .space-one{
+                
+                 padding: 30px 30px; 
+            }
+        }

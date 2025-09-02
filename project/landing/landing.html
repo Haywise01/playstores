@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="./landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- <section> -->
+        <div class="section-one">
+            <div class="top">
+                   <img src="data:image/png;base64,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" alt="" width="40px" height="40px">
+                 <div class="topp">
+                      <p>Google play</p>     
+                 </div> 
+                 <div class="app">
+                    <p>Games</p>
+                    <p>Apps</p>
+                    <p><a href="/project/third/index.html" style="text-decoration: none;">Kids</a></p>
+                </div>
+                </div>
+
+                <div class="top-right">
+                   <span class="material-symbols-outlined">search</span>
+                   <div class="question">?</div>
+                    <div class="ball">l</div>
+             </div>
+        </div>
+
+        <!-- <section> -->
+            <div class="section-two">
+                <div class="sec-two">
+                    <div class="first">
+                            <button style="background-color: rgba(0, 128, 0, 0.178); color: green;"><span class="material-symbols-outlined">desktop_windows</span> Windows</button>
+                    </div>
+                        
+                    <div class="second">
+                        <button><span class="material-symbols-outlined">mobile</span> Phone</button>
+                    </div>
+
+                    <div class="third">
+                        <button><span class="material-symbols-outlined">tablet_android</span> Tablet</button>
+                    </div>
+
+                    <div class="fourth">
+                        <button><span class="material-symbols-outlined">tv</span> TV</button>
+                    </div>
+
+                    <div class="fifth">
+                         <button> <a href="/project/last/index.html" style="text-decoration: none;"><span class="material-symbols-outlined">laptop_chromebook</span> Chromebook </a></button>
+                    </div>
+
+                    <div class="sixty">
+                        <button><a href="/project/second/index.html" style="text-decoration: none;" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">watch </span>watch </a></button>
+                    </div>
+                </div>
+            </div>
+
+        <!-- <section> -->
+            <div class="section-three">
+                <div class="sec-three">
+                    <h4>Play your favorites on the big screen</h4>
+                    <p>Google Play Games on PC</p>
+                </div>
+            </div>
+
+        <!-- <section> -->
+         <div class="section-four">
+                <div class="first-views">
+                     <div class="firstt-views">
+                      <iframe width="" height="" src="https://www.youtube.com/embed/TwyqEHRZ96c" title="CookieRun: OvenBreak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                     <div class="view-one">
+                        <div>
+                            <img src="https://play-lh.googleusercontent.com/t45twhdbQEb7i9vO-4rw7ouorWaMvt2_EWiWP52G8hIvbvWRg9vMOiFGx-ref8J10sM=s128-rw" alt="">
+                        </div>
+
+                        <div class="text-one">
+                            <h3>CookieRun: OvenBreak</h3>
+                            <p>Adventure . Action</p>
+                            <p>4.5 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>  
+                    </div>                           
+                </div>
+
+                <div class="second-views">
+                    <div class="sec-views">
+                    <iframe width="" height="" src="https://www.youtube.com/embed/XCtJIeHcDi4" title="Cookie Run: Kingdom - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="view-two">
+                        <div>
+                            <img src="https://play-lh.googleusercontent.com/bckxAVrrNTfteLR9GuoW672p9jiQG2mIe6TpL6w4KuSSrnppSTHPCOW3JUBPri1CbnUz=s128-rw" alt="">
+                        </div>
+                        <div class="text-two">
+                            <h3>CookieRun .Kingdom</h3>
+                            <p>Role Playing .Action-strategy</p>
+                            <p>4.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>                
+                </div> 
+
+                <div class="third-views">
+                    <div class="thirdd-views">
+                        <iframe width="" height="" src="https://www.youtube.com/embed/QGD-WEqo_bQ" title="Hades&#39; Star Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="view-three">
+                        <div>
+                            <img src="https://play-lh.googleusercontent.com/_VRSZ4h_Dcadat9mQAC33JhgL3UC1T5eCykBIOAVyPhfD_RhnNK6fXP9_6N09C8YQHg=s128-rw" alt="">
+                        </div>
+                        <div class="text-three">
+                            <h3>Hades's Star</h3>  
+                            <p>Srategy . 4X</p>
+                            <p>4.5 <span class="material-symbols-outlined">star_rate_half</span></p>      
+                        </div>
+                    </div>                
+                </div> 
+            
+                <div class="forth-views">
+                    <div class="forthh-views">
+                        <iframe width="" height="" src="https://www.youtube.com/embed/Jet0zVFbXBE" title="Botworld Adventure - Gameplay Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="view-four">
+                        <div>
+                            <img src="https://play-lh.googleusercontent.com/Ow49SushZUuIXCEEFvBGI_GXYVML9igkNFY3_bI-p07n5OppCC8rejYOvr9na--uWA=s128-rw" alt="">
+                        </div>
+                        <div class="text-four">
+                            <h3>Botworld Adventure</h3>  
+                            <p>Role Playing . Action-strategy</p>
+                            <p>4.4 <span class="material-symbols-outlined">star_rate_half</span></p>      
+                        </div>
+                    </div>  
+                </div> 
+             <!-- </div>   -->
+               <div class="fifth-views">
+                    <div class="fifthh-views">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/Yvq5LPdOvw8" title="Dungeon Knight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="view-five">
+                        <div>
+                            <img src="https://play-lh.googleusercontent.com/dkYy4Yo3yvnNKoigq15YKeJPQYZ2eG1Pn2y03EMihY-OJMdNpkWLGWk3WZHEKGOS81s=s128-rw" alt="">
+                        </div>
+                        <div class="text-five">
+                            <h3>Dungeon Knight </h3>  
+                            <p>Stimulation . Role Playing</p>
+                            <p>4.1 <span class="material-symbols-outlined">star_rate_half</span></p>      
+                        </div>
+                    </div>  
+                </div> 
+        </div>
+        
+
+        <!-- <section> -->
+                 <div class="section-five">
+                    <div class="word-five">
+                        <h4>Just added</h4>
+                        <p>Google Play Games on PC</p>
+                    </div>
+                 </div>
+
+         <!-- <section> -->
+        <div class="section-six">
+            <div class="first-views">
+                    <div class="firstt-views">
+                        <iframe width="" height="" src="https://www.youtube.com/embed/8bQp-iDT64o" title="Eversoul launch - store video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                <div class="view-one">
+                   <div>
+                     <img src="https://play-lh.googleusercontent.com/xjcNC5ax4F5jx78yGif_LVuRlIaA9-QrlWl5CnoYlybDteo-sLCgmTcZl0uY1Ylmzg=s128-rw" alt="">
+                   </div>
+                   <div class="text-one">
+                    <h3>Eversoul</h3>
+                    <p>Role Playing Idle RPG</p>
+                    <p>4.2 <span class="material-symbols-outlined">star_rate_half</span></p>
+                   </div>
+                 </div>
+
+                                               
+            </div> 
+
+             <div class="first-views">
+                    <div class="firsttt-views">
+                       <img src="https://play-lh.googleusercontent.com/0xV1gHLLCPo5hqvE8sEIysSMBZC2_a8Besoc5xwjzaow7zIXQtIjbiGjqlQkiOPo9g=w1052-h592-rw" alt="">
+                    </div>
+
+                    <div class="view-one">
+                        <div>
+                            <img src="https://play-lh.googleusercontent.com/bckxAVrrNTfteLR9GuoW672p9jiQG2mIe6TpL6w4KuSSrnppSTHPCOW3JUBPri1CbnUz=s128-rw" alt="">
+                        </div>
+                        <div class="text-one"> 
+                            <h3>Among Gods! RPG Adventure</h3>
+                            <p>Role Playing . Action-strategy</p>
+                            <p>4.7 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>                    
+            </div>  
+
+            <div class="third-views">
+                 <div class="thirdd-views">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/33d7Wun-IlQ" title="Star Chef 2: Restaurant Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 </div>
+
+                 <div class="view-one">
+                   <div>
+                     <img src="https://play-lh.googleusercontent.com/ZqpDBON6KeRWrcXAInL4A2WtYMdD5iTDewrqhWlTw9ZBNSe8-3emkNSjQEzUxH9jGw=s128-rw" alt="">
+                   </div>
+                    <div class="text-five">
+                        <h3>Star Chef 2: Restaurant Game</h3>
+                        <p>Stimulation . Restaurant</p>
+                        <p>4.1 <span class="material-symbols-outlined">star_rate_half</span></p>          
+                    </div>
+                </div>
+            </div> 
+
+            <div class="third-views">
+                 <div class="thirdd-views">
+                    <iframe width="" height="" src="https://www.youtube.com/embed/i_5dSr9I2Eg" title="TURNIP BOY COMMITS TAX EVASION - RELEASE TRAILER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 </div>
+
+                 <div class="view-one">
+                    <div>
+                        <img src="https://play-lh.googleusercontent.com/_mrMHepfN45sa9SJH9bRQIUpctc4Q80hiju4GUmNJScB8xOwuEUpLQ-gAVXJRvtrPQ=s128-rw" alt="">
+                    </div>
+                    <div class="text-five">
+                        <h3>Turnip Boy Commits Tax Evasion</h3>
+                        <p>Adventure . Action</p>
+                        <p>4.7 <span class="material-symbols-outlined">star_rate_half</span></p>          
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+       <div class="linee">
+        <div class="line">
+            <hr>
+        </div> 
+       </div>
+                    
+        <!-- <section> -->
+            <div class="sectionn-seven">
+                <div class="sec-seven">
+                    <div class="googleplay">
+                        <h3>Google Play</h3>
+                        <p>Play Pass</p>
+                        <p>Play Points</p>
+                        <p>Gift cards</p>
+                        <p>Redeem</p>
+                        <p>Refund policy</p>
+                    </div>
+                    <div class="kids">
+                        <h4>Kids & family</h4>
+                        <p>Parent Guide</p>
+                        <p>Family sharing</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <section> -->
+                <div class="section-eight">
+                    <div class="sec-eight">
+                        <div class="ps">
+                            <p><a href="/project/fourth/index.html" style="text-decoration: none;">Terms of Service </a></p>
+                            <p>Privacy</p>
+                            <p>About Google Play</p>
+                            <p>Developers</p>
+                            <p>Google Store</p>
+                            <p>All prices include VAT.</p>
+                        </div>
+                        <div class="english">
+                            <p>Nigeria (English)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <section></section> -->
+                 <div class="application">
+                    <div class="my-apps">
+                        <div>
+                            <span class="material-symbols-outlined">sports_esports</span>
+                            <p>Games</p>
+                        </div>
+                        <div>
+                            <span class="material-symbols-outlined">apps</span>
+                            <p>Apps</p>
+                        </div>
+                        <div>
+                            <span class="material-symbols-outlined">kid_star</span>
+                            <p>Kids</p>
+                        </div>
+                    </div>
+                    
+                 </div>
+
+    </div>
+</body>
+</html>

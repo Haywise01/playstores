@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <div class="container">
+        <!-- section -->
+        <div class="section-one">
+            <div class="top">
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANYAAADrCAMAAAAi2ZhvAAABblBMVEX///9ChfTqQzU0qFP7vARQjfX/vQD7uQD7twD8wwD7tgBChPZChPgwp1A0qU5Dgv7pNDgqif8mpUrqPi8QoT9Dg/szqz70PBLoKBAzqkYzqUv/+/PpNCIdo0VBh+wzqkT8z2vpPTboJw5AiuFBiedLr2RChvE1pmA2pG0Oplf925X+8tvxPh/pOCj51dP98O/V6tp4wIi2275su36Qyp2m07BAi940p1nw+PI3oXw5nZA6m5s6mqH95rjDtSrNtiX7wznbuB7xuw/803w2o3F1rUWCc8WMb7uYa7CjZ6T0kR6yYJLyhSO7XIfVT1/eSk7udGzym5ZdfuP2vbrsW1DwgXrxjojta2L1sq5Ys26x2brF4svd5v+4zfqVtvh4pPY4n4Y7mKvRyXU8lbU9k78+kMo/jtT94alTqk38yE99p2j4qRL2nBmoZJ63XozCWX3wdSjKVXHRUWXuZi3jR0TsVjD+7ctzeNL4y8m4SHhy4o4dAAAId0lEQVR4nN3baXfTRhSHcWQL7HqpKy+tAZudtCk4wUCALmlTaOlOSVgTtu5A9yUF+u07TrzI9kiamXv/o1HvObzjhX9HfmRF0t2zRzKX7q30z22e3Nzsn986I/sPGZwz5/PNbr1arebFv3q929zcupT2ZyLP1sVuPT891Xqzn+1jdrbereYlU2+ey+4Ru3SyKzPtHrLm+bQ/nuFsNaVHanzE6ltpf0KT6TfjUIPpnsxeYudmzxTSb2LWEttUUGUvsb6aKj9I7GzaH1Z5VqJPgfOTmcTOJJ4tZr6J2UjsYuyZXQrLQGIrymFNJgOJ6YQ1GdcTMzlYg3E8MUNV3u3E7pl9B3fH3cT6uqfB6XE1MflfWOrjZmL3j+8nupxM7EHtAtnlYGIPK5ULB8gu5xJ7VPYqxxlcjiV2wvN4XG4lttcbuE5wuFxKbIclXC9zuNxJbJfF5nIlsSFLuPIsLkcSG7G8yqH8yywuJxIbsxhdDiQ2YXG6Uk8sxBKui1yutBMLs7zKAp8r3cSmWML1Op8rzcSmWV6Z1ZVeYjMsZldqic2yvLLH6kopsTkWuyuVxOZZ/K5qs287MQlLuN44wOrK120nJmN55TK3y3ZiUhbCZTcxOUv8MPO7bCYWxUK4LCYWyfJaH/K7rCUWzcK4LCUWw/JabyFcVhKLY4FcNhKLZaFc+XoVnFg8C+ZCJ5bAwrmwiSWxcC6R2Ep6LK/29X6QC/grlsxCumCJKbCgLlBiKiyoC5OYEsurvQ10IX7F1FjCdRjo4k9MkYV2cSemyvJq70BdzIkps+Aukdi9FFh4V5UvMQ2WV3sX7OJLTIdlwcWVmBbLq30Dd/Ekpsey4qp2N8mJabKsuATs24N2WcL1Kpy1+N6+4pt2WV7tO7RLqHy/4K9aZcFdOyoxxbVTNllg10glpnTENDETFtQVUolvomliRiyga/H9kMo3TsyM5bW+x7hmVaaJGbJALonKLDFTFsQlV5kkZswCuKJUBomZs7zWD7yuxQ8iVdqJEVjMrniVZmIUFqsrUaWVGInF6FJQ6SRGY7G51FTqiRFZXutHjr+/lFW+YmJUFotLR6WWGJnF4NJT+SqJ0Vl012VNlZ+cGAOL6jJQ+UmJcbC81oXD5gsqZqqExFhYXsV8wdJU5ccmxsMydxFUfkxiTCzPcHGUpvIjE+NimS1YklVRibGxTFwMKl+eGB9Lf3GUR+XLEmNk6S5Ysqn8+cQ4WXouTpX4JhZWYSzhqqq6fFaVmOIVGMurHFJ0savEAXsKYw0WfVUWVAAq4VqDsZQWR59AVGEXO0thcRSlEq4jMFaiC6cS543HMFbCQuyTfTiVcB2EsbxyjAt5rAazhmPFLI5ij5WY4iqOFbmICFf5/mUgK8JlQeUXnwFZUtcTPErMUyRL4rKj8ksHkazZBctFSyq/8BjKmnYtfmRJ5ftHsKzwgqVFlV9As8Yum6rBlQaYNVywtKoanOLRrB2XXZUv/v6Hs4Srblc1OBXiWV7rJ7sqO6zgaufnl/53rODqa7lX7LossAaqnGUX/pSxq7LsKp4Cs0Yquy70z3Hw8UglXL/Yc2EvnsIqi64C9lJ3WmXPNXjIgGMFn0yrrLmKyD8j51WWXDt3dlEsmcqOC3mLRq6y4lrD3VALPpWrLLh2DhaGFa0Srs+gruGzOwQrToV24R4tBL/GqbCu0irqQVCSCukaPxZnZyWrcK7xw0h2VvD56UQVyhV61M/MUlMJ1xf8ruL4WHGzVFUIVyn8phorK/hNVcXuKvhTb3NxsoIv1VW8rrmXChlZeipO1/wroHwsXRWbS/bCLhsr+F1XJVx/0F3y16u5WCYqBlfUy/BMLDMV2RW5usDDMlXRXDGLJiys4E9TFcEVuxbEwaKocrmjRq6EJS4GFk1l5kpauaOzgr86JJWBK3lBksyiq4Trbx2XyjorlcWh0nKpLR8TWTwqDVfpitKqOJF1jUel6io+VVzsp7Gu9ZhUSq6C/0wNRWQxqpJdhdFb02BWmVWV5FKMis76ilcV61KOisxiV0W7NKKisgAq4fpH4tKKisiCqKSu0pVkBRdrG6Oad+lGRWJtN0CqgSuMuqwbFYUFVIVdhYJ+VAQWVDVxGUVlzFoAq4Yuw6hMWXjVwFUyjcqQtXAUr8r1ejdIKG3WQg6varTXiShd1gZe1WhfXyartFhlC6rOzSU6SotlQUWPSp+10QCrOKLSZqFVPFHpsjZ6WBVTVHqsMljVazBFpcUqb3SQKsaotFhQVaN9iy8qHdbGaaCKNyoN1nOgqsMclTIreE57fBU3/FGpsoAqRFSKLKAKEpUaC6fq5CBRKbGC58mvchpNr30XiEpgoVSNY7CoFFiTpTLeaQOjSmaBVJ3cCzQqjoVRoaNKYkFUjfZtG6hoFkTVvgM+UySxECorUcWyZtcaGabXsRJVHItfZS2qGBa7qmEvqmgWu8pmVJGsqLVG07EbVRSLWdU4ZjeqCBavyn5UchavqrMNv6ZVYsUva2pOKlHJWJwq2N0XbZbKWqMyivE5AY3FqELefdFk8anYHr4xsNTXGhMm3ahmWFyqtKMazl5eVepRDWeXpbOCGjMORDWcE3wqJ6IazqOyybKmFIW+pakzD8s8KleiGs6DivkCYAiFefhmPvdbdJVLUY3mX6rKrahGc5P4XNixqEZzl/TqN/bhG2GW2+aonoNRjea66bfQzahGs2R4uCw8fCPNHZPDlcItTc1ZPqaNSvPui/Ksa+5tpnRLU3v0frvSuqWpPcsah8v9qCajfDbMRFSTUXPZfvhGn6Xk9ztTe05AmeVcwsVhlqIKz+12zAHLWFThWcpFnRGz8ksVMTdyssR6Tl/TKs2L6+1O+E3+Rq+dW886amderN8Zq7Zv3XX7Ol0+/wGMYRnbhrjnKAAAAABJRU5ErkJggg==" alt="" width="40px" height="40px">
+                 <div class="topp">
+                      <p>Google play</p>     
+                 </div> 
+                 <div class="app">
+                    <p><a href="/project/landing/landing.html" style="text-decoration: none;">Games</a></p>                    
+                    <p>Apps</p>
+                    <p>Kids</p>
+                </div>
+                </div>
+
+                <div class="top-right">
+                   <span class="material-symbols-outlined">search</span>
+                   <div class="question">?</div>
+                    <div class="ball">l</div>
+             </div>
+        </div>
+
+        <!-- <section></section> -->
+        <div class="section-two">
+            <div class="sec-two">
+                <img src="./lego.png" alt="">
+                <!-- <img src="https://play-lh.googleusercontent.com/Xyd1pIx_wh6MDnmZv5JZ7nrGuoLCqU50CoUciKiUMQiPSfgjKyjW9D3EFtZSYuuFWzk=s256-rw" alt=""> -->
+                <h1>Teacher Approved apps & games</h1>
+                <div class="bot">
+                    <div>
+                         <button>All age up to 12</button>
+                    </div>
+                   
+                    <div>
+                         <button> Ages up to 5</button>
+                    </div>
+                   <div>
+                         <button>Ages 6-8</button>
+                   </div>
+                   <div>
+                          <button>Ages 9-12</button>
+                   </div>
+                </div>
+         </div>
+
+         <!-- <section></section> -->
+          <div class="section-three">
+            <div class="sec-three">
+                <h1>New & updated</h1>
+            </div>
+          </div>
+
+          <!-- <section></section> -->
+           <div class="section-four">
+            <div class="sec-four">
+                <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/8KQU9ZWW6qSnLk0vBsl_kdNbrqj_2chzN7rg_Pl0l5calKVr9WC7aHi1HUrWsvf2ig=s512-rw" alt="">
+                    <p>Little Panda's Flowers DIY</p>
+                    <p>4.0<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/KGoewCOYZTaOlA-aoBcs4aq-gCTA2Uqf-JvLpDB7mlHJOEVmYz1fWOoku3mOVbLLwKKz=s512-rw" alt="">
+                    <p>Duddu - My Virtual Pet</p>
+                     <p>4.2<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                   <img src="https://play-lh.googleusercontent.com/JQ0fA4NFWnnqbJXdgaEGPH3r9rbY_62hFIIiHNPeU-n3xu1JdzhpHgZjGqWKqzgKEfo=s512-rw" alt="">
+                    <p>Sago Mini World: Kids</p>
+                    <p>Games</p>
+                    <p>4.2<span class="material-symbols-outlined">star_rate_half</span></p>
+
+                </div>
+                <div class="one">
+                   <img src="https://play-lh.googleusercontent.com/q5-7d5GkNBZdSnuw7Z6LPcp8-_yciLIstRCoL_n-kdKk94Fv-RsWpt22UNvVRp0tfig=s512-rw" alt="">
+                    <p>Unicorn Cake Cooking</p>
+                    <p>Games 2-6</p>
+                      <p>3.8<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                   <img src="https://play-lh.googleusercontent.com/-Lnb6nOhu3YO34--0kBD9iIjA2fgcm8AS3rIyUT7yZmfQOMKij3kK7PAnhR5BWGHX8qf=s512-rw" alt="">
+                    <p>Monster Truck Kids Car</p>
+                    <p>Games</p>
+                      <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/nsa6IbFGy0C7WOTwLvR1U7ROdRWHSpA5CwO2aGgOfGtcyC5oVQBa_0dn3toQM3iXMfM=s512-rw" alt="">
+                    <p>LEGO® DUPLO® Peppa</p>
+                    <p>3.0<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/bL5U9rXetTblIw8rVB3FObo1yq1gKATzjnDi8jTfokLogRJSL1Jrn6U--9srS-dVPuU=s512-rw" alt="">
+                    <p>Toddler Drawing Apps for</p>
+                    <p>4.0<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/Xyd1pIx_wh6MDnmZv5JZ7nrGuoLCqU50CoUciKiUMQiPSfgjKyjW9D3EFtZSYuuFWzk=s512-rw" alt="">
+                    <p></p>
+                    <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                   <img src="https://play-lh.googleusercontent.com/2B7gORstnWhvnb20iqLSHQkKHipmib-3Hu_Qwr9dKEnhFzn1t4s2v1lvFYVRTItPGXQ=s512-rw" alt="">
+                    <p>My Princess House - Doll</p>
+                      <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+             </div>
+           </div>
+
+           <!-- <section></section> -->
+            <div class="section-five">
+            <div class="sec-five">
+                <h1>Recommended for you</h1>
+            </div>
+          </div>
+
+          <div class="section-six">
+            <div class="sec-six">
+                <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/qqz8Dz1v-GGXMsvMFjU-G-NYU3Hh4Ft6RBhLfY5B0XA6vnrRqqop2-pL6q6R6CtsTBo=s512-rw" alt="">
+                    <p>Google Kids Space</p>
+                    <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/p9MbsbT9qtIVKOKbjK93ZuH_YNRCiLgAiNZmKXns0oJ_AnWRbcyoN4AsRQnlfOtk2ihq=s512-rw" alt="">
+                    <p>Yamo Doodle - Kids</p>
+                    <p>Drawing Pad</p>
+                      <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/tV1oMxM8kWoARKybkI0Z3uxaAymSqMNAOH_e8l2FQ5na-E1RWA-y-fTyM63qA0H99Ik=s512-rw" alt="">
+                    <p>Giggle Academy - Play &</p>
+                    <p>Learn</p>
+                    <p>4.3<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/DkHwSrMQ5Ea-KjJDA4Gi72RcZI0NFHBTWQTs4mLSsJyBZrC14Zvs0PaT5Ynd2i6ojrHx=s512-rw" alt="">
+                    <p>Miraculous Ladybug Life</p>
+                    <p>4.3<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/q1Wikmc0zq_j9xaDChi-oIAv7-OPlWWenbvL4xkRB3bVvyI3ycHHbAhCPI8CnI92Ng=s512-rw" alt="">
+                    <p>Bubble Pop - Shoot</p>
+                    <p>Bubble Games</p>
+                    <p>4.6<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/kaFlsVH2WYwyDpS7lou81_V5sz2O-zIAEZbgH3_-3qz_b9BLut4fJS2pYvy4R0SCx6cf=s512-rw" alt="">
+                    <p>Bluey: Let's Play!</p>
+                    <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/s7qqQXgRHjhm8Z0Kw3ZyVj4fVjWS4pKQWEOT7Pf-i0LXfnDl5k_bUaxyo5FDCd9BYRU=s512-rw" alt="">
+                    <p>Hair Salon Games For</p>
+                    <p>Kids</p>
+                    <p>4.4<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                  <img src="https://play-lh.googleusercontent.com/XfcHdE3o-DpafPLNX_rpVokeCGFNdfImx9fRv0bvI4FNXWTmsOI_GDg4GL8IRgZ4457u=s512-rw" alt="">
+                    <p>Survey landing</p>
+                      <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                  <img src="https://play-lh.googleusercontent.com/4C7_obhYf5JarmbDIqABHWeiXB0qfe8gGmt4bLK0r39fbOYqHzAotCz5VNUbQnqqPQ=s512-rw" alt="">
+                    <p>Daily Piano Jam</p>
+                    <p>Kids</p>
+                      <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                  <img src="https://play-lh.googleusercontent.com/5j-BcrwAh6XgriiAkUvJmgpnjfThTBFO47PbAILx95EEBH-3giSqUaFbLfhdUnDTJt4_=s512-rw" alt="">
+                    <p></p>
+                    <p></p>
+                      <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                 <img src="https://play-lh.googleusercontent.com/jQd-tg-aakTzGJLgT_ZmupTPBB9PI57PvKh_k1bD6i4BdVRKgHSgELBn24XWKkBpPE8=s512-rw" alt="">
+                    <p></p>
+                    <p></p>
+                      <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                 <img src="https://play-lh.googleusercontent.com/zEeVdf2QNSOGP5b_koYGD72o_LB5uLdABUoBvYSxNiPZjVRwcxF2j2a_e8c5KGgpKxk=s512-rw" alt="">
+                    <p></p>
+                    <p></p>
+                      <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/OxNGx8LU6gm8aLfJcwcJxunvj2a7zDgDyPOD4J9HRSIc6N_1O1iZ2dLr3xQMbuMy_wE=s512-rw" alt="">
+                    <p></p>
+                    <p></p>
+                    <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+                 <div class="one">
+                    <img src="https://play-lh.googleusercontent.com/wLHcXRfdzMo_IH5Hcc-tB0YtzgE0_diJyKpXY98r3pA4B8o44fZT_jYFieayqOK3t2U=s512-rw" alt="">
+                    <p>MySchool - Learning</p>
+                    <p>Games</p>
+                    <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                </div>
+            </div>
+          </div>
+
+            <!-- <section>seven</section> -->
+            <div class="section-five">
+                <div class="sec-five">
+                    <h1>Family apps</h1>
+                </div>
+          </div>
+
+          <!-- <section></section> -->
+           <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                     <img src="https://play-lh.googleusercontent.com/q1Wikmc0zq_j9xaDChi-oIAv7-OPlWWenbvL4xkRB3bVvyI3ycHHbAhCPI8CnI92Ng=s512-rw" alt="">
+                        <p> Bubble Pop - Shoot</p>
+                        <p>Bubble Game</p>
+                        <p>4.6<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                     <img src="https://play-lh.googleusercontent.com/wYMKA4XjRvlwgnIs7t0AObv2G24B9FGiwoKYkmCOd7yQtHJAA7R0TvR_XtOao3yAg4b1=s512-rw" alt="">
+                        <p>City Patrol : Rescue</p>
+                        <p>Vehicle</p>
+                        <p>3.7</p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/s7qqQXgRHjhm8Z0Kw3ZyVj4fVjWS4pKQWEOT7Pf-i0LXfnDl5k_bUaxyo5FDCd9BYRU=s512-rw" alt="">
+                        <p>Hair Salon Games For</p>
+                        <p>Kids</p>
+                        <p>4.4<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/n81lLL61QgCKB8KpsCz-pF51E2j9sTMQC08DkfP6oA2lc0Z-zblAcx0-91yp1ZrRcaI=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/oabmwvVnheovMRdqXl0KJ_VytPGMdOTf9Ea8FhFK6Yhr4PG_9ygNXfdYZlHyX_5y7w=s512-rw" alt="">
+                        <p>Pizza Game: Kids Cooking</p>
+                        <p>Games</p>
+                        <p>4.2<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/8ZnxoFpCULiD4CkIxJT9kxH70xyjxrHah-QVDBOwTzsEYjIpjqnGP4-L4af6nWvqZ9Q=s512-rw" alt="">
+                        <p>Barbie Dreamhouse</p>
+                        <p>Adventure</p>
+                        <p>4.1<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/zzdOCxgBsqZLDtkTBxWlHJUCA1Tcsjao8KvskAluzu2a6Hp7Psw43Um0QSxvWuDba68=s512-rw" alt="">
+                        <p>Math Games: Math for</p>
+                        <p>Kids</p>
+                        <p>4.6<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/UN3haOrdzRKSqRJzKHR1Ck51q2Z8yaqpsAlPrGfAvsJrgk6N9W95tQDkbBFDCNinWU4=s512-rw" alt="">
+                        <p>Color Sort: Ball Sort</p>
+                        <p>Bubble</p>
+                        <p>4.8<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                       <p>Animal Jigsaw Puzzles</p>
+                        <p>for Kids</p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/zEeVdf2QNSOGP5b_koYGD72o_LB5uLdABUoBvYSxNiPZjVRwcxF2j2a_e8c5KGgpKxk=s512-rw" alt="">
+                        <p>Coloring Games: Color &</p>
+                        <p>Paint</p>
+                        <p>4.5</p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/oXTH6nPRLUNTLgvtO5R63U51V0UiLBi8k_wDBQRPgPdrXpCeT9-qMmZA7oKVTc0wa6x8=s512-rw" alt="">
+                        <p>Piano Kids: Musical</p>
+                        <p>Journey</p>
+                    </div>
+                </div>
+           </div>
+
+           <!-- <section>nine</section> -->
+            <div class="section-five">
+                <div class="sec-five">
+                    <h1>Games you might like</h1>
+                </div>
+          </div>
+
+          <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/iRAD6Y8UO3sBotM1L0yAL5qAK0WmHVr8yj-kFtSom2zqjEbPGpJ18i4Lg999yBWsrmG0=s512-rw" alt="">
+                        <p>Cute Animal Onet - Kids</p>
+                        <p>Games</p>
+                        <p>4.4<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/n81lLL61QgCKB8KpsCz-pF51E2j9sTMQC08DkfP6oA2lc0Z-zblAcx0-91yp1ZrRcaI=s512-rw" alt="">
+                        <p> Search for Kids</p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                      <img src="https://play-lh.googleusercontent.com/sjYBrafvD8C0Ku_pVJ9xDtlu7dyhyEGU1AqEx_14rfm27cGLbyyO55HzkGmxI_0nSQ=s512-rw" alt="">
+                        <p>Baby Pop It</p>
+                        <p>4.3<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/8ZnxoFpCULiD4CkIxJT9kxH70xyjxrHah-QVDBOwTzsEYjIpjqnGP4-L4af6nWvqZ9Q=s512-rw" alt="">
+                        <p>Barbie Dreamhouse</p>
+                        <p>Adventures</p>
+                        <p>4.1<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/c2YjucqYt3Ot4DITkOBp6RIJZCMtspfNcz6G2sbgW6L3A3i0ji6B1LRTYzU2Yt1a3w=s512-rw" alt="">
+                        <p>Toon Cup - Football Game</p>
+                        <p>3.7<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/oXTH6nPRLUNTLgvtO5R63U51V0UiLBi8k_wDBQRPgPdrXpCeT9-qMmZA7oKVTc0wa6x8=s512-rw" alt="">
+                        <p>Piano Kids: Musical</p>
+                        <p>Journey</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/7kJs0oWNzNBPFPDctZai30JHGtyfu9fYjlyuCcoIzkge6xLq1ZyrfkoZNW24hDbKphs=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div>
+
+           <!-- <section>ten</section> -->
+           <div class="section-five">
+                <div class="sec-five">
+                    <h1>Family apps</h1>
+                </div>
+          </div>
+
+           <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/90bs08jcKHbCn2BGZ3ACUZcxOtGt435hy76awA4LmifoEYS3VoAMvMBD2NYV22FHVSA=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/4C7_obhYf5JarmbDIqABHWeiXB0qfe8gGmt4bLK0r39fbOYqHzAotCz5VNUbQnqqPQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/jQd-tg-aakTzGJLgT_ZmupTPBB9PI57PvKh_k1bD6i4BdVRKgHSgELBn24XWKkBpPE8=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/wLHcXRfdzMo_IH5Hcc-tB0YtzgE0_diJyKpXY98r3pA4B8o44fZT_jYFieayqOK3t2U=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/QzDXMfj5f29N2YK9au_Q7_AwXSZEOqRXa5laFTtidjsXk6H0Ernw_sAAJrw58L53J2Ta=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/sz6QEp51FXbrxvpjhIH_atJdkOLPS_6tOeeA2tRLTCVHlCdOrB8rw9Q-xenlfPoxwls=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/7kJs0oWNzNBPFPDctZai30JHGtyfu9fYjlyuCcoIzkge6xLq1ZyrfkoZNW24hDbKphs=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p>4.0<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                </div>
+           </div>
+               
+            <!-- <section>twelve</section> -->
+           <div class="section-five">
+                <div class="sec-five">
+                    <h1>Casual games</h1>
+                </div>
+            </div>
+
+            <!-- <section></section> -->
+              <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/wYMKA4XjRvlwgnIs7t0AObv2G24B9FGiwoKYkmCOd7yQtHJAA7R0TvR_XtOao3yAg4b1=s512-rw" alt="">
+                        <p>City Patrol : Rescue</p>
+                        <p>Vehicle</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/h7DA-M0-JBw6aMlTj9EDFl65k9gIGVIP_y_l6r62WCw8YhCb6qkWNAdl0bVpc2XG-kA=s512-rw" alt="">
+                        <p>PAW Patrol Rescue World</p>
+                        <p>4.3<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/Eo0SRpAUNqS4xOnKj4aBpLSJTJIXtrsIzPQkxQ7i-2zNyb-PzI2CBtDqqv2HY5hPqJE=s512-rw" alt="">
+                        <p>Kila: The Smart Fox</p>
+                        <p>4.1<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/JKSapOJyQsztfSC1CJtKZqNpCCSQk4iWgRPa_OmA7oAqkAIcQChQ7WiYscIBnvP1T3KS=s512-rw" alt="">
+                        <p>Jigsaw Sort: Jigsaw HD ·</p>
+                        <p>Kids</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ouVoMkDLkvLp6jaSeefTHJ0vXfq7nys4L3Vf41a_XyXRr9THwkzSwnCMe2jH4_n99Q=s512-rw" alt="">
+                        <p>Barbie Magical Fashion</p>
+                        <p>4.0<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/DZwzD0xwYxwgW2rkxd-31kwt5upmWOnJbSV3OEWf3g9_jcWdqX4v_odOYiitLIE8yQU=s512-rw" alt="">
+                        <p>Super Daddy - Dress Up a</p>
+                        <p>Hero</p>
+                        <p>4.2<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p>Nails Salon Games - Nail</p>
+                        <p>Arts</p>
+                        <p>4.2<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div>
+
+           <!-- <section></section> -->
+               
+            
+           <div class="section-five">
+                <div class="sec-five">
+                    <h1>Stylized games</h1>
+                </div>
+            </div>
+               
+              <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/s7qqQXgRHjhm8Z0Kw3ZyVj4fVjWS4pKQWEOT7Pf-i0LXfnDl5k_bUaxyo5FDCd9BYRU=s512-rw" alt="">
+                        <p>Hair Salon Games For</p>
+                        <p>Kids</p>
+                        <p>4.4<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/QkAL3pPDhBuDi3EY4eM8kWaM-J8z6j5GOtVOHq3TcAZyNbpoCSi0c3br9l4RHf3ebIPB=s512-rw" alt="">
+                        <p>Car Racing Go Games for</p>
+                        <p>Kids</p>
+                        <p>4.7<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/sxuoQiITibVweql57BrLL6_p7y9ZQLjoEvzYds-mpfhzazAzjauJV7UVUw_7W_AabtE=s512-rw" alt="">
+                        <p>CoComelon: Learn ABCs</p>
+                        <p>4.2<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/zEeVdf2QNSOGP5b_koYGD72o_LB5uLdABUoBvYSxNiPZjVRwcxF2j2a_e8c5KGgpKxk=s512-rw" alt="">
+                        <p>Disney Frozen Royal</p>
+                        <p>Paint</p>
+                        <p>4.5<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/5y_fe2REIQqM5SfeC38k9s03ie0PfeZoqJqnzjpYjNieBX2z5U_QR5TV5_uMws87n0Q=s512-rw" alt="">
+                        <p>Disney Frozen Royal</p>
+                        <p>Castle</p>
+                        <p>4.2<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/wFKzzzda5fn5wZ0X5LdkuhmthnW0MvpR_42wA-frJjN2FlDehlT5Qo1DcGHkuj-4Ewlr=s512-rw" alt="">
+                        <p>Baby Shark ABC Phonics:</p>
+                        <p>Games</p>
+                        <p>4.2<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/YnD1_n_3i_PTu2n3aKXrGftsrlm-I6YRWnk-VLA6F4jWniq_HasiQAgpWYeH-Ev-i5A=s512-rw" alt="">
+                        <p>Monster Truck Go: Racing</p>
+                        <p>Games</p>
+                        <p>4.1<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p><span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p><span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p><span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p><span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                </div>
+           </div>
+           <!-- <section></section> -->
+            
+           <div class="section-five">
+                <div class="sec-five">
+                    <h1>Entertainment</h1>
+                </div>
+            </div>
+
+              <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/OxNGx8LU6gm8aLfJcwcJxunvj2a7zDgDyPOD4J9HRSIc6N_1O1iZ2dLr3xQMbuMy_wE=s512-rw" alt="">
+                        <p>YouTube Kids</p>
+                        <p>4.4<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/pqNnj4o22t2GWXcvc_r_E3CYwuVeM0pvEafSPVrl0B-7fBDlQtOMsEaZSz05XX6Cf0Y=s512-rw" alt="">
+                        <p>BabaSharo Kids</p>
+                        <p>4.4<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/kMrxZIygjPf0mlqS-dBUvFOdZmwTBD4KzAwjCNfhPmqCRvpr_hxcCHIEtj_xeITtpPd5=s512-rw" alt="">
+                        <p>Marvel HQ: Kids Super</p>
+                        <p>Hero Fun</p>
+                        <p>4.2<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/NP1VYpprYnEwHZni_RSBo3Q6A47urA0Lfwg0L7Yl4-1YBl91VvMcLZp2f0JLaLwjXlM=s512-rw" alt="">
+                        <p> Vania Mania Kids Games </p>
+                        <p>& Video</p>
+                    </div>
+                    <div class="one">
+                      <img src="https://play-lh.googleusercontent.com/xFdrBo7MT2F6lHEcLj7Sv8dijQ541DjwFdR7W8S20vIZwnCGW67uX5ohEWVJJ8hgrcs=s512-rw" alt="">
+                        <p>4.8<span class="material-symbols-outlined">star_rate_half</span></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/DB7bWBeHj0RvBPeUrA0E8xf4rFEAk5klxzjxHp0Nc8qcj9_DrkbnRafofm0MVEN5Fg=s512-rw" alt="">
+                        <p>Vlad and Niki – games &</p>
+                        <p>Videos</p>
+                        <p>4.5<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/Nj9tlvr5I9HgdO4rPtbft-mTIP3Ctzlo07ZEmPcxtJCqc-wsF3Wdjl7WOp6nwe7pSb4=s512-rw" alt="">
+                        <p>GoNoodle - Kids Videos</p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div>
+
+           <!-- <section></section>  -->
+            <div class="section-five">
+                <div class="sec-five">
+                    <h1>Action games for kids</h1>
+                </div>
+            </div>
+
+          
+
+             <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                      <img src="https://play-lh.googleusercontent.com/tb1L8n9ktBMx5W4xxhQArNyKZYUFcAkwdE3lLDeE7oo2Y5i2ltEGmEP8OlXS0EIw9Cws=s512-rw" alt="">
+                        <p>Transfomer Rescue</p>
+                        <p>Bots Dash</p>
+                        <p>5.0</p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/z47a9H7funK7P-zKlxbItO02FfyFu2W7NVjo7diixN-b11bQuaMJUG4NldbGGA3_w9c=s512-rw" alt="">
+                        <p> Transfomer Rescue</p>
+                        <P>Bots Hero</P>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/IcQ4w6EgIef52kKvm015UBNU4hXx5CGQdp4ggq2JkaIx3w-9Sd4wiFTR17-oDuolWZoW=s512-rw" alt="">
+                        <p>Nihilumbra</p>
+                        <p>4.2<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/P68oJSf3B2Pmb9acII34q5YXhZmAn-IIzsmaOJ05h374u1X4obrBZ5W6Hoxs--kWgQ=s512-rw" alt="">
+                        <p>BEYBLADE BURST app</p>
+                        <p>4.2<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/GNoyAqn2mPTlKwgp93o3PPbif_93jc89ctFhsvgbIGKhDoOwpKePJUlKjnBzQ1gpkQ8I=s512-rw" alt="">
+                        <p>Bloons Adventure Time</p>
+                        <p>TD</p>
+                        <p>4.2<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/klZ2suNMWkNWJaKKbxWuo9aFGcULRsyXMEu-fy7nftqcame1vI-VnETc9mi66asL7pp1=s512-rw" alt="">
+                        <p>Jungle</p>
+                        <p>Gym</p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/SqPZALLHqLVLknE2JOuOewLwCosdkLtWATCUUXGcTfI3H8to2EW3llzhvRNk1u16Gw=s512-rw" alt="">
+                        <p>Dinosaur Car Games：</p>
+                        <p>DuDu Games</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div>
+
+           <!-- <section></section> -->
+            <div class="section-five">
+                <div class="sec-five">
+                    <h1>Cartoony games</h1>
+                </div>
+            </div>
+          
+
+             <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/kaFlsVH2WYwyDpS7lou81_V5sz2O-zIAEZbgH3_-3qz_b9BLut4fJS2pYvy4R0SCx6cf=s512-rw" alt="">
+                        <p>Bluey: Let's Play!</p>
+                        <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/wLHcXRfdzMo_IH5Hcc-tB0YtzgE0_diJyKpXY98r3pA4B8o44fZT_jYFieayqOK3t2U=s512-rw" alt="">
+                        <p>Animal Connect: Kids</p>
+                        <p>4.6<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/BFC3nbKlwiIyglf9uHU_AlHkOFp0cHH1e1VTBHOcJuAD7c6DCSEHMyg8fighgo0Ycpc=s512-rw" alt="">
+                        <p>PJ Masks™: Hero</p>
+                        <p>Academy</p>
+                        <p>4.8<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/oXTH6nPRLUNTLgvtO5R63U51V0UiLBi8k_wDBQRPgPdrXpCeT9-qMmZA7oKVTc0wa6x8=s512-rw" alt="">
+                        <p>Piano Kids: Musical</p>
+                        <p>Journey</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/zEeVdf2QNSOGP5b_koYGD72o_LB5uLdABUoBvYSxNiPZjVRwcxF2j2a_e8c5KGgpKxk=s512-rw" alt="">
+                        <p>Coloring Games: Color &</p>
+                        <p>Paint</p>
+                        <p>4.5<span class="material-symbols-outlined">star_rate_half</span></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/QzDXMfj5f29N2YK9au_Q7_AwXSZEOqRXa5laFTtidjsXk6H0Ernw_sAAJrw58L53J2Ta=s512-rw" alt="">
+                        <p>Cartoon Network</p>
+                        <p>Game Box</p>
+                        <p>4.2</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p>Spelling & Phonics: Kids</p>
+                        <p>Games</p>
+                        <p>4.4</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div>
+
+           <!-- <section></section> -->
+               <div class="section-five">
+                <div class="sec-five">
+                    <h1>Mathematics games</h1>
+                </div>
+            </div>
+         
+
+             <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/90bs08jcKHbCn2BGZ3ACUZcxOtGt435hy76awA4LmifoEYS3VoAMvMBD2NYV22FHVSA=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/4C7_obhYf5JarmbDIqABHWeiXB0qfe8gGmt4bLK0r39fbOYqHzAotCz5VNUbQnqqPQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/jQd-tg-aakTzGJLgT_ZmupTPBB9PI57PvKh_k1bD6i4BdVRKgHSgELBn24XWKkBpPE8=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/wLHcXRfdzMo_IH5Hcc-tB0YtzgE0_diJyKpXY98r3pA4B8o44fZT_jYFieayqOK3t2U=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/QzDXMfj5f29N2YK9au_Q7_AwXSZEOqRXa5laFTtidjsXk6H0Ernw_sAAJrw58L53J2Ta=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/sz6QEp51FXbrxvpjhIH_atJdkOLPS_6tOeeA2tRLTCVHlCdOrB8rw9Q-xenlfPoxwls=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/7kJs0oWNzNBPFPDctZai30JHGtyfu9fYjlyuCcoIzkge6xLq1ZyrfkoZNW24hDbKphs=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div>
+
+           <!-- <section></section> -->
+            <div class="section-five">
+                <div class="sec-five">
+                    <h1>Educational apps</h1>
+                </div>
+            </div>
+          
+
+             <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/HnsaJtfmKRWaWSP5hJlydHw65T1qkZWUumn7-ecowax5zqjftTCOSMG7FcIySCMPwQ=s512-rw" alt="">
+                        <p>Jolly Phonics Lessons</p>
+                        <p>4.6</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/hQ5T-M1tN3KPDgtZYOWrpjuw2D25ay8qGIrLxoxolreVJ7bG_xzFMhnA0yj0z1HucQ=s512-rw" alt="">
+                        <p>Abc123: Kids Alphabet &</p>
+                        <p>Number</p>
+                        <p>4.2</p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/JsZSCYY2WP794YK2PdRampiwiRMQsXC4xViZ6ntT1YOcCVoitFK95pmRUp4L1M9dgSE=s512-rw" alt="">
+                        <p>Kids All in One (in English)</p>
+                        <p>4.4</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/SIKcxKQu0L1OM0kj5g77fym-LVnE6zibhn4Nou9lfg_LfuQRJzz69q90kb4KupXTs4uE=s512-rw" alt="">
+                        <p>LooLoo Kids - Nursery</p>
+                        <p>Rymes</p>
+                        <p>4.0</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/yxnle7mEkbmG08c1KieO71tJVf4bRemlXkIYysA_uohR23VV01D52pf5zSUmzBTqYw=s512-rw" alt="">
+                        <p>Khan Academy Kids</p>
+                        <p>4.4</p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/d5EsdgwNdWMt8Gg2aA7skmHQwSraovcsX7GrrvQ0Pr3n6t3pfg0G2XvGn58Mz81wgw=s512-rw" alt="">
+                        <p>Kids Nursery Rhymes -</p>
+                        <p>4.3</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/7kJs0oWNzNBPFPDctZai30JHGtyfu9fYjlyuCcoIzkge6xLq1ZyrfkoZNW24hDbKphs=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div>
+
+           <!-- <section></section> -->
+            <div class="section-five">
+                <div class="sec-five">
+                    <h1>Language games</h1>
+                </div>
+            </div>
+           
+
+             <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/90bs08jcKHbCn2BGZ3ACUZcxOtGt435hy76awA4LmifoEYS3VoAMvMBD2NYV22FHVSA=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/4C7_obhYf5JarmbDIqABHWeiXB0qfe8gGmt4bLK0r39fbOYqHzAotCz5VNUbQnqqPQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/jQd-tg-aakTzGJLgT_ZmupTPBB9PI57PvKh_k1bD6i4BdVRKgHSgELBn24XWKkBpPE8=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/wLHcXRfdzMo_IH5Hcc-tB0YtzgE0_diJyKpXY98r3pA4B8o44fZT_jYFieayqOK3t2U=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/QzDXMfj5f29N2YK9au_Q7_AwXSZEOqRXa5laFTtidjsXk6H0Ernw_sAAJrw58L53J2Ta=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/sz6QEp51FXbrxvpjhIH_atJdkOLPS_6tOeeA2tRLTCVHlCdOrB8rw9Q-xenlfPoxwls=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/7kJs0oWNzNBPFPDctZai30JHGtyfu9fYjlyuCcoIzkge6xLq1ZyrfkoZNW24hDbKphs=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div>
+
+           <!-- <section></section> -->
+         <div class="section-five">
+                <div class="sec-five">
+                    <h1>Fun watch apps for kids</h1>
+                </div>
+            </div>
+
+             <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/p2LXElrEY6MXKpaMdW8wqE_jGUuZ5faDN2uqj4ta0sOGu6l5CO-oHbJJ90ddNiHqE43q=s512-rw" alt="">
+                        <p>Crayola Pets Watch Face</p>
+                        <p>4.3</p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/YZSXiNpsC7wppcX_xSXibvGpjOg-Zn80hUhFhIHCLsnQUq_S3feJ9F46amutpl8wOg=s512-rw" alt="">
+                        <p>Unicorn Academy Watch</p>
+                        <p>Apps</p>
+                        <p>4.3</p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/EsX9plgsT68Y0hpg-lTV2GQ9yNBTC50zqqRM2lIHwousHXdS4CKo8_ArLBbiotCLiSg=s512-rw" alt="">
+                        <p>MathTango for Smart</p>
+                        <p>Watch</p>
+                        <p>4.2</p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/QJ0oqHG5GZifmsywNFbfGtK0lUek48FrXbyrdAV06pSi_Ic58uWSrv_gA5xDsg6E28ri=s512-rw" alt="">
+                        <p>Rebel Girls Mood Journal</p>
+                        <p>3.4</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/9jAnnVwZY3_cbSQpUCL_e9H_CZUwQsXUTIAwK81MlUOtjPGFl9fUn3cbRAK0MRJrSd4=s512-rw" alt="">
+                        <p>Barbie Color Creations</p>
+                        <p>Watch</p>
+                        <p>₦1,500.00</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/UJMSfNVseYopg5rE7M-nN_YS-RPqYjn8a8XjrFG7mV0MQMSX0-ZGjun5YbtDV7apIw=s512-rw" alt="">
+                        <p>Captain America Watch</p>
+                        <p>Face</p>
+                        <p>₦1,500.00</p>
+                    </div>
+                    <div class="one">
+                        
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div>
+
+           <!-- <section>today</section> -->
+              <!-- <section></section> -->
+         <div class="section-five">
+                <div class="sec-five">
+                    <h1>Games For Kids </h1>
+                </div>
+            </div>
+
+             <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/Yi07pS-SF3w_ENRrdOvczzesQDmAAch_Kqt8pT8iYgVQ4vnLNb1Sqd2IIe4KIvTeKO0=s512-rw" alt="">
+                        <p>ScratchJr</p>
+                        <p>4.2</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/9Tb7lYV_6FiEPdk1Qo92YB4vDmPYkdXpoqUzM7sl6NqUnakioAe9hpA4xtbe7LbeUDSG=s512-rw" alt="">
+                        <p>Pettson's Inventions</p>
+                        <p>₦11,500.00</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/0QRHzGepjiFKB7vmPTTkurGLuoSvjwzdC-60M2-rivqaQKwiru2RAAHlONIV6WSZ_5A=s512-rw" alt="">
+                        <p>Apple Count</p>
+                        <p>4.1</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/_Gr1tX6-VEw-JoSldF-ZuVrhnDsCrt3VgfcE56mzzH1uoVpmjUp3VHNR4DtNK3iVBHBm=s512-rw" alt="">
+                        <p>My Little Pony Color By</p>
+                        <p>Margic</p>
+                        <p>4.4</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/zEeVdf2QNSOGP5b_koYGD72o_LB5uLdABUoBvYSxNiPZjVRwcxF2j2a_e8c5KGgpKxk=s512-rw" alt="">
+                        <p>Coloring Games: Color &</p>
+                        <p>Paint</p>
+                        <p>4.5</p>
+                    </div>
+                    <div class="one">
+                       <img src="https://play-lh.googleusercontent.com/EVegOB9zaA2Luo4q9NmM1E2SB6WiJqHV0_hlS6GEQROBx4E-O5AjtXhsMBckupsnUDE=s512-rw" alt="">
+                        <p>Pizza Baking Kids Games</p>
+                        <p>4.0</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/sxuoQiITibVweql57BrLL6_p7y9ZQLjoEvzYds-mpfhzazAzjauJV7UVUw_7W_AabtE=s512-rw" alt="">
+                        <p>CoComelon: Learn ABCs</p>
+                        <p>and 123s</p>
+                        <p>4.2</p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div>
+
+             <!-- <section></section> -->
+         <div class="section-five">
+                <div class="sec-five">
+                    <h1>Fun watch apps for kids</h1>
+                </div>
+            </div>
+
+             <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/90bs08jcKHbCn2BGZ3ACUZcxOtGt435hy76awA4LmifoEYS3VoAMvMBD2NYV22FHVSA=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/4C7_obhYf5JarmbDIqABHWeiXB0qfe8gGmt4bLK0r39fbOYqHzAotCz5VNUbQnqqPQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/jQd-tg-aakTzGJLgT_ZmupTPBB9PI57PvKh_k1bD6i4BdVRKgHSgELBn24XWKkBpPE8=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/wLHcXRfdzMo_IH5Hcc-tB0YtzgE0_diJyKpXY98r3pA4B8o44fZT_jYFieayqOK3t2U=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/QzDXMfj5f29N2YK9au_Q7_AwXSZEOqRXa5laFTtidjsXk6H0Ernw_sAAJrw58L53J2Ta=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/sz6QEp51FXbrxvpjhIH_atJdkOLPS_6tOeeA2tRLTCVHlCdOrB8rw9Q-xenlfPoxwls=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/7kJs0oWNzNBPFPDctZai30JHGtyfu9fYjlyuCcoIzkge6xLq1ZyrfkoZNW24hDbKphs=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div>
+
+             <!-- <section></section> -->
+         <div class="section-five">
+                <div class="sec-five">
+                    <h1>Fun watch apps for kids</h1>
+                </div>
+            </div>
+
+             <!-- <section></section> -->
+            <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/90bs08jcKHbCn2BGZ3ACUZcxOtGt435hy76awA4LmifoEYS3VoAMvMBD2NYV22FHVSA=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/4C7_obhYf5JarmbDIqABHWeiXB0qfe8gGmt4bLK0r39fbOYqHzAotCz5VNUbQnqqPQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/jQd-tg-aakTzGJLgT_ZmupTPBB9PI57PvKh_k1bD6i4BdVRKgHSgELBn24XWKkBpPE8=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/wLHcXRfdzMo_IH5Hcc-tB0YtzgE0_diJyKpXY98r3pA4B8o44fZT_jYFieayqOK3t2U=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/QzDXMfj5f29N2YK9au_Q7_AwXSZEOqRXa5laFTtidjsXk6H0Ernw_sAAJrw58L53J2Ta=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/sz6QEp51FXbrxvpjhIH_atJdkOLPS_6tOeeA2tRLTCVHlCdOrB8rw9Q-xenlfPoxwls=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/7kJs0oWNzNBPFPDctZai30JHGtyfu9fYjlyuCcoIzkge6xLq1ZyrfkoZNW24hDbKphs=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div>
+
+              <!-- <section></section>
+         <div class="section-five">
+                <div class="sec-five">
+                    <h1>Fun watch apps for kids</h1>
+                </div>
+            </div> -->
+
+             <!-- <section></section> -->
+            <!-- <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/90bs08jcKHbCn2BGZ3ACUZcxOtGt435hy76awA4LmifoEYS3VoAMvMBD2NYV22FHVSA=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/4C7_obhYf5JarmbDIqABHWeiXB0qfe8gGmt4bLK0r39fbOYqHzAotCz5VNUbQnqqPQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/jQd-tg-aakTzGJLgT_ZmupTPBB9PI57PvKh_k1bD6i4BdVRKgHSgELBn24XWKkBpPE8=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/wLHcXRfdzMo_IH5Hcc-tB0YtzgE0_diJyKpXY98r3pA4B8o44fZT_jYFieayqOK3t2U=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/QzDXMfj5f29N2YK9au_Q7_AwXSZEOqRXa5laFTtidjsXk6H0Ernw_sAAJrw58L53J2Ta=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/sz6QEp51FXbrxvpjhIH_atJdkOLPS_6tOeeA2tRLTCVHlCdOrB8rw9Q-xenlfPoxwls=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/7kJs0oWNzNBPFPDctZai30JHGtyfu9fYjlyuCcoIzkge6xLq1ZyrfkoZNW24hDbKphs=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div> -->
+
+             <section></section>
+         <!-- <div class="section-five">
+                <div class="sec-five">
+                    <h1>Fun watch apps for kids</h1>
+                </div>
+            </div> -->
+
+             <!-- <section></section> -->
+            <!-- <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/90bs08jcKHbCn2BGZ3ACUZcxOtGt435hy76awA4LmifoEYS3VoAMvMBD2NYV22FHVSA=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/4C7_obhYf5JarmbDIqABHWeiXB0qfe8gGmt4bLK0r39fbOYqHzAotCz5VNUbQnqqPQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/jQd-tg-aakTzGJLgT_ZmupTPBB9PI57PvKh_k1bD6i4BdVRKgHSgELBn24XWKkBpPE8=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/wLHcXRfdzMo_IH5Hcc-tB0YtzgE0_diJyKpXY98r3pA4B8o44fZT_jYFieayqOK3t2U=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/QzDXMfj5f29N2YK9au_Q7_AwXSZEOqRXa5laFTtidjsXk6H0Ernw_sAAJrw58L53J2Ta=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/sz6QEp51FXbrxvpjhIH_atJdkOLPS_6tOeeA2tRLTCVHlCdOrB8rw9Q-xenlfPoxwls=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/7kJs0oWNzNBPFPDctZai30JHGtyfu9fYjlyuCcoIzkge6xLq1ZyrfkoZNW24hDbKphs=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div> -->
+
+             <!-- <section></section> -->
+         <!-- <div class="section-five">
+                <div class="sec-five">
+                    <h1>Fun watch apps for kids</h1>
+                </div>
+            </div> -->
+
+             <!-- <section></section> -->
+            <!-- <div class="section-eight">
+                <div class="sec-eight">
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/90bs08jcKHbCn2BGZ3ACUZcxOtGt435hy76awA4LmifoEYS3VoAMvMBD2NYV22FHVSA=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/4C7_obhYf5JarmbDIqABHWeiXB0qfe8gGmt4bLK0r39fbOYqHzAotCz5VNUbQnqqPQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/jQd-tg-aakTzGJLgT_ZmupTPBB9PI57PvKh_k1bD6i4BdVRKgHSgELBn24XWKkBpPE8=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/wLHcXRfdzMo_IH5Hcc-tB0YtzgE0_diJyKpXY98r3pA4B8o44fZT_jYFieayqOK3t2U=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/QzDXMfj5f29N2YK9au_Q7_AwXSZEOqRXa5laFTtidjsXk6H0Ernw_sAAJrw58L53J2Ta=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/sz6QEp51FXbrxvpjhIH_atJdkOLPS_6tOeeA2tRLTCVHlCdOrB8rw9Q-xenlfPoxwls=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/7kJs0oWNzNBPFPDctZai30JHGtyfu9fYjlyuCcoIzkge6xLq1ZyrfkoZNW24hDbKphs=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/ior1Xuw5LZHRjBhMz_yswYW1uiabe3ySKMbfr9nuwx4hiVwAM3uSm3frmZtHfv0OIlc=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/KhzoG1iKeqGcBAm8guc-vBAxhKHlxXbGfs3WTvQOSvNsO8fDtiJKG91E4wtO1Uk2kQ=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/lV9KMJ_f1CFyr-gq6lzPKWS73Q5Nfy-Pl_AfUl-GQZ6kaYeY9e0iZAJ2Zy203eVUw0o=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <img src="https://play-lh.googleusercontent.com/BmwbdWrl3erXcNSMp-5jfUvOr1L8d-ZWNH2XBLZkYWJali0mashdPBYEofSz-jWRNh4=s512-rw" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+           </div>   -->
+
+           <!-- lastphase -->
+            <div class="linee">
+        <div class="line">
+            <hr>
+        </div> 
+       </div>
+                    
+        <!-- <section> -->
+            <div class="section-final">
+                <div class="sec-final">
+                    <div class="googleplay">
+                        <h3>Google Play</h3>
+                        <p>Play Pass</p>
+                        <p>Play Points</p>
+                        <p>Gift cards</p>
+                        <p>Redeem</p>
+                        <p>Refund policy</p>
+                    </div>
+                    <div class="kids">
+                        <h4>Kids & family</h4>
+                        <p>Parent Guide</p>
+                        <p>Family sharing</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <section> -->
+                <div class="section-phase">
+                    <div class="sec-phase">
+                        <div class="ps">
+                            <p>Terms of Service</p>
+                            <p>Privacy</p>
+                            <p>About Google Play</p>
+                            <p>Developers</p>
+                            <p>Google Store</p>
+                            <p>All prices include VAT.</p>
+                        </div>
+                        <div>
+                            <p>Nigeria (English)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <section></section> -->
+                 <div class="application">
+                    <div class="my-apps">
+                        <div>
+                            <span class="material-symbols-outlined">sports_esports</span>
+                            <p>Games</p>
+                        </div>
+                        <div>
+                            <span class="material-symbols-outlined">apps</span>
+                            <p>Apps</p>
+                        </div>
+                        <div>
+                            <span class="material-symbols-outlined">kid_star</span>
+                            <p>Kids</p>
+                        </div>
+                    </div>
+                    
+                 </div>
+
+
+
+
+         <!-- </div> -->
+
+    </div>
+</body>
+</html>

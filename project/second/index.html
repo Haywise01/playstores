@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <section> -->
+        <div class="section-one">
+            <div class="top">
+                   <img src="data:image/png;base64,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" alt="" width="40px" height="40px">
+                 <div class="topp">
+                      <p>Google play</p>     
+                 </div> 
+                 <div class="app">
+                    <p><a href="/project/landing/landing.html" style="text-decoration: none;">Games</a></p>
+                    <p>Apps</p>
+                    <p><a href="/project/third/index.html" style="text-decoration: none;">Kids</a></p>
+                </div>
+                </div>
+
+                <div class="top-right">
+                   <span class="material-symbols-outlined">search</span>
+                   <div class="question">?</div>
+                    <div class="ball">l</div>
+             </div>
+        </div>
+
+         <!-- <section> -->
+            <div class="section-two">
+                <div class="sec-two">
+                    <div class="first">
+                            <button><span class="material-symbols-outlined">desktop_windows</span> Windows</button>
+                    </div>
+                        
+                    <div class="second">
+                        <button><span class="material-symbols-outlined">mobile</span> Phone</button>
+                    </div>
+
+                    <div class="third">
+                        <button><span class="material-symbols-outlined">tablet_android</span> Tablet</button>
+                    </div>
+
+                    <div class="fourth">
+                        <button><span class="material-symbols-outlined">tv</span> TV</button>
+                    </div>
+
+                    <div class="fifth">
+                         <button><a href="/project/last/index.html"><span class="material-symbols-outlined">laptop_chromebook</span> Chromebook </a></button>
+                    </div>
+
+                    <div class="sixty">
+                        <button style="background-color: rgba(0, 128, 0, 0.312);"><span class="material-symbols-outlined">watch</span> Watch</button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- <section> -->
+            <div class="section-three">
+                <div class="sec-three">
+                    <h4>Relax with game for watches</h4>
+                    <p>Forget the time</p>
+                </div>
+            </div>
+
+            <!-- <section> -->
+            <div class="section-four">
+                <div class="my-view">
+                    <div class="picture-one">
+                         <div class="my-picture">
+                             <img src="https://play-lh.googleusercontent.com/8zkh2bMjifNzeXAdVTYkXoQz0Yivb4tlNoMlBW6cmbSctYqs8Ktua2eStt9UrnO4Q31p=s512-rw" alt="">
+                         </div>
+                        <div class="word">
+                            <p>4 in Watch - Join 4</p>
+                            <p>4.7 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                    <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/prc-o_bow5XhCiZBBvyQUUN21A_zOhQKTbmnoTUwLIRZBBpRJbmA5Cz9J_VaSioX3V0=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Hex: Anxiety Relief Relax</p>
+                            <p>Game</p>
+                             <p>3.8 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/_n0EFiM3WoNI1Ui9debHzAsnd011gJm0BiJsS2LVEaygrUjwsXcsyyF5C_jC67hQavkJ=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Energy: Anti-Stress Loops</p>                            
+                            <p>4.5<span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/7MbuEEuVwX2A5A2qctyXvPc4cCTA6-s7x7mPxJwGNo2QohPlYJDf69QqHegVh5zjDYQN=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Touch Round - Watch</p>
+                            <p>Game</p>
+                            <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/RcpXUtyXF_PkZc-X3JpIbg7wuCZLoo83Y6WyVoM-U7XQqf8f3LLgSIBTzA4S-3xeIDw=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Shapes: Logic & Brain</p>
+                            <p>Training</p>
+                            <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/4_ZMZNHCT8VvUbKOgTqavk-8SnfME4uIRMeiYkqwSmlbBrgkuT-08DJ4fHy6LB_kfg=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Connection: Logic Games</p>                           
+                            <p>4.1 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/mdVWN1cWjiRuOopKfTFTe0cBi2UoEedggjWoCcGRT2RTfbwTolTuahdhYlSp-3MkhvOx=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Single Tap Games</p>                           
+                            <p>4.1 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/O6OwNRhs-c0LhifhrKWPruQ5hi8eL17U5zhrQ2jhOst2NGWgmjIwDjLXFqF8qaSx3aw=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>4Colors</p>
+                            <p>₦455.00</p>                         
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                           <img src="https://play-lh.googleusercontent.com/X4ryKEnR4A3-lvnVnEf1U_4LUe6FB6B89sTS2NXuv4-o3BILsL2zrxIJIWZFxTRL1cyd=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Galaxy Logic Game</p>
+                            <p>4.1 <span class="material-symbols-outlined">star_rate_half</span></p>                         
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                           <img src="https://play-lh.googleusercontent.com/zS7XtqbrA2iiCJBp8SVE1kQjBEjlKnFFtfOVCPAhJlr2RvF6pHM3MQ040iPJYW1pPYM=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Arrow - AA game</p>
+                            <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>                         
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                           <img src="https://play-lh.googleusercontent.com/6zxdjP8DeB0SdTT-N6478tBCdgbEjdBIfulIC_CKvce6ZXi_Nzcb0PUOabZ9vBrzE3Tg=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>WristBubbles</p>
+                            <p>₦860.00</p>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <section> -->
+            <div class="section-five">
+                <div class="sec-five">
+                    <h2>Watch faces for gamers</h2>
+                    <p>Level up your wrist</p>
+                </div>
+            </div>
+
+             <!-- <section> five -->
+            <div class="section-four">
+                <div class="my-view">
+                    <div class="picture-one">
+                         <div class="my-picture">
+                             <img src="https://play-lh.googleusercontent.com/8qynZQ2OsMghOrgXWxFFvq997RheY8fVQ8ve8RGkJ-c6GOOlLe1nt44NcEvNjfVx1Io-=s512-rw" alt="">
+                         </div>
+                        <div class="word">
+                           <p>Running Cat Mouse -</p>
+                            <p>Watch Face</p>
+                            <p>₦610.00</p>
+                        </div>
+                    </div>
+
+                    <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/zwz7qp3r2cy15x6mvOJJ-26GUGz_SkR0ppoqUbIr_-1hROaEbaUPfvUIbU-IidSC3Pw=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                           <p>CELEST5566 Gamer</p>
+                            <p>Watch</p>
+                            <p>₦2,990.00</p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                           <img src="https://play-lh.googleusercontent.com/PoUtsW2t1UX--ph8TI_1yCz-fPGFoOHss8vvGVzNpFEXGBMttPd5e7uMqNjNwM_3xVQ=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>LPV7 Chrono - Space</p>  
+                            <p>Force</p>                        
+                            <p>4.5 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                           <img src="https://play-lh.googleusercontent.com/18ED3KzbLxYJT5NtHLXV03H0ndhJCdpI0aUip92GPHKVU9WztJpMGTmJoj8PFCJPuEA=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Game Joystick - Ready to</p>
+                            <p>play</p>
+                            <p>₦3,300.00</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="picture-one">
+                        <div class="my-picture">
+                          <img src="https://play-lh.googleusercontent.com/DrNre1Ku-cNDWV7Fd1Q4KXrEYYQGoCOlQ7L0tTA_eA8PeOgig0K4jaNotyGqI5T-HBs=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                           <p>[KNA017] RETRO</p>
+                            <p>₦1,550.00</p>
+                            <p>3.9<span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+                     <div class="picture-one">
+                        <div class="my-picture">
+                          <img src="https://play-lh.googleusercontent.com/HpxUxSo2sa2oIpSC4zaNPqs1l55hD9pO9AqzXa4ovSF9t2XrBWFhWrQ2g7JCJIbGdQs=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                           <p>Clash of Clans Watch</p>
+                            <p>Face</p>
+                            <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+                     <div class="picture-one">
+                        <div class="my-picture">
+                          <img src="https://play-lh.googleusercontent.com/4zegmgYUPBUvUD3RLAlTsHjM61te41_0Y0OR3-0ARc2K2Er0D0xYvFssVrAvy4H2RdI=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                           <p>AD Albumon Animated</p>
+                            <p>Game</p>
+                            <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+                     <div class="picture-one">
+                        <div class="my-picture">
+                          <img src="https://play-lh.googleusercontent.com/4DCTxaxefz-E8f1yrRtVT3M4MM_qHwqMeaLTJN8IO3PBL_nhKybRMbuoH6Hl3x7kmww=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Retro Neon 80s Cool</p>
+                            <p>Game</p>
+                            <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section six -->
+            <div class="section-six">
+                <div class="sec-six">
+                    <h2>Essential apps</h2>
+                    <p>Maps, music & more</p>
+                </div>
+            </div>
+
+            <!-- section seven -->
+             <div class="section-four">
+                <div class="my-view">
+                    <div class="picture-one">
+                         <div class="my-picture">
+                             <img src="https://play-lh.googleusercontent.com/SPY3nBA8Mfe26jojaOFmqKYMOYKr5_u0GFq1sRKOmbsEboWmw4gJdLyf1ihQyfhLXLA=s512-rw" alt="">
+                         </div>
+                        <div class="word">
+                            <p>Nike Run Club - Running</p>
+                            <p>Coach</p>
+                        </div>
+                    </div>
+
+                    <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/Pbr3n81ImNUpAwhWBWQ_eytF26cNMoMF0b4YwroXGk7xyB_Ur-DsNibiukTVCIBi9ic=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                             <p>komoot - hike, bike & run</p>
+                            <p>Game</p>
+                            <p>3.8 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/JSSeB3XQtb9sHD5FWTqVM4AksY_Kg2q20eExenxGqPJZdn2uVQxi8eoHkP5MA-IR4w=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>SoundCloud: The Music</p>
+                            <p>you Love</p>                            
+                            <p>4.5 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                           <img src="https://play-lh.googleusercontent.com/S76GphUu2pZa249td2Bb4XAhLcPRrFdL1zp_5qU1ouukvRq9r0-8jJ-CruaTtdT6g84=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Calm - Sleep, Meditate,</p>
+                            <p>Relax</p>
+                            <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                    <div class="picture-one">
+                        <div class="my-picture">
+                           <img src="https://play-lh.googleusercontent.com/EiB8nFwIAQxl8JrfoaNVIXSM7FZZ108NmJ_D0Eqyb1utmDLe3FgKU8p7OEwAhnDWzl8=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                          <p>Easy Voice Recorder</p>                            
+                            <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+                     <div class="picture-one">
+                        <div class="my-picture">
+                           <img src="https://play-lh.googleusercontent.com/UrXXZUwhhEbw631YURg2iUfx5ynhK6LBe9wEQg4f9okp8nLIR35g9s2-Z8dRMpj8FimX=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                           <p>My GPS Location</p>
+                          <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                    <div class="picture-one">
+                        <div class="my-picture">
+                           <img src="https://play-lh.googleusercontent.com/7ynvVIRdhJNAngCg_GI7i8TtH8BqkJYmffeUHsG-mJOdzt1XLvGmbsKuc5Q1SInBjDKN=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Spotify: Music and</p>
+                            <p>podcast</p>
+                            <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                    <div class="picture-one">
+                        <div class="my-picture">
+                           <img src="https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Google Maps</p>
+                            <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section eight -->
+              <div class="section-eight">
+                <div class="sec-eight">
+                    <h2>Challenging games on the go</h2>
+                    <p>Win on your watch</p>
+                </div>
+            </div>
+
+            <!-- section nine -->
+             <div class="section-four">
+                <div class="my-view">
+                    <div class="picture-one">
+                         <div class="my-picture">
+                             <img src="https://play-lh.googleusercontent.com/uDT42dOhXyy0tqxLk5hVhitt1M9yAAaPmDo-spX73vzpEwmUxqFpYP4Z5g4Vv77Cat8=s512-rw" alt="">
+                         </div>
+                        <div class="word">
+                            <p>Speed Math Mental Quick</p>
+                            <p>4.0 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                    <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/yKSINmO-veSlc_rRMKX-Rzd5umcLOBv_iE4O7ngOBy5DXVkhl7XjwnaW0eEszWPFknU=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Hex: Anxiety Relief Relax</p>
+                            <p>Game</p>
+                            <p>3.8 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/tgkKt6-G0nNAlzs1HaihlvbP6sFUM1JWYBix9CyD5G3cmljm1NKbY9T2RuCQloQ1KLo=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Jump Drive: Get Away</p>                          
+                            <p>4.5 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/KZelzOV6xUKmAs9iFRjiNrkaMTl-Ixmoc9wwhcPKJvuGNvABD18qqd8DAJX4HE7lvw=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                           <p>Cosmo Run</p>
+                            <p>Game</p>
+                            <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                    <div class="picture-one">
+                        <div class="my-picture">
+                          <img src="https://play-lh.googleusercontent.com/xThmKW_Z6baBkpYyUbDXKjMaNcpfcvSuHL2aXeMa394PBmTYfDC4y0-N9jI0nxB9TFF0=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Touch Round - Watch</p>
+                            <p>Game</p>
+                            <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+                     <div class="picture-one">
+                        <div class="my-picture">
+                          <img src="https://play-lh.googleusercontent.com/bNRaF-3BmZRlT1Ovri0_oUd6GvZZ1WhrZO_AnunN5EfLtU8RIQNfdQ3br77bLAmx4xI=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Let Off - Pursuit car game</p>
+                            <p>Game</p>
+                            <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+                     <div class="picture-one">
+                        <div class="my-picture">
+                          <img src="https://play-lh.googleusercontent.com/pnMFyzv-uBKHJUO3RtJd_kXJUaG5X36G9i9fyNvUKbRmxlhnQM7vXhueft-yr9iAgQ=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Touch Round - Watch</p>
+                            <p>Game</p>
+                            <p>3.9 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!-- section ten -->
+             <div class="section-ten">
+                <div class="sec-ten">
+                    <h2>Time for fun</h2>                    
+                </div>
+            </div>
+
+            <!-- section-eleven -->
+             <div class="section-four">
+                <div class="my-view">
+                    <div class="picture-one">
+                         <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/Sw4B73LIXRhl7AA5-918Vh840gxpN8QR8Ish3V8bRdwXNP6ygfUvyQxhG8QEQKseGkk=s512-rw" alt="">
+                         </div>
+                        <div class="word">
+                            <p>Omnitrix Simulator - 2025</p>
+                            <p>4.6  ₦3,810.00</p>
+                        </div>
+                    </div>
+
+                    <div class="picture-one">
+                        <div class="my-picture">
+                          <img src="https://play-lh.googleusercontent.com/kMrxZIygjPf0mlqS-dBUvFOdZmwTBD4KzAwjCNfhPmqCRvpr_hxcCHIEtj_xeITtpPd5=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Marvel HQ: Kids Super <br> Hero Fun</p>                            
+                            <p>3.4 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/EsX9plgsT68Y0hpg-lTV2GQ9yNBTC50zqqRM2lIHwousHXdS4CKo8_ArLBbiotCLiSg=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>MathTango for Smart <br> Watch</p>                            
+                            <p>4.2 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/CfrJaUjn0MMXJnzE0XXkJq5Edw0w625Rwe09GHWtHRubkEBUPP7ASsMqzXK9b14cqsQ=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Two Whats?! And A Wow!</p>
+                            <p>Game</p>
+                            <p>3.2 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                     <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/uPLR9A0WcXHyI2RmkCRQrmTD_RSbHD4tajJksGRFsS78oG9Vd-aLaI4ggwDIZL4BWP7P=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Barbie Color Creations</p>
+                            <p>4.0 <span class="material-symbols-outlined">star_rate_half</span></p>                            
+                        </div>
+                    </div>
+
+                    <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/QJ0oqHG5GZifmsywNFbfGtK0lUek48FrXbyrdAV06pSi_Ic58uWSrv_gA5xDsg6E28ri=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Rebel Girls Mood Journal</p>                            
+                            <p>3.4 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+                    <div class="picture-one">
+                        <div class="my-picture">
+                            <img src="https://play-lh.googleusercontent.com/DSd01gXjZGKFZmgn1uWzIoPCMlXM3_PDtJ66YqIU8Pc6NARwgvNILU7x8EgLI-sZsGA=s512-rw" alt="">
+                        </div>
+                        <div class="word">
+                            <p>Unicorn Academy Watch <br> App</p>                           
+                            <p>4,2 <span class="material-symbols-outlined">star_rate_half</span></p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- section twelve -->
+             <div class="section-twelve">
+               <div class="space-one">
+                 <div class="iwatch">
+                    <img src="./watch-2.png" alt="">
+                    <!-- <img src="https://play-lh.googleusercontent.com/12Y4eZHpbpj6tr_yQ3DzZIliw8Z8gfJkjJOxew_mi9p-zHekZ5ympEfu2F3mRSOMK31-8BwchkQ=w500-h490-rw" alt=""> -->
+                </div>
+
+                 <div class="iwatch-text">
+                  <h4>More apps for your <br> Watch</h4>
+                  <p>From maps to music</p>
+                 </div>
+               </div>
+             </div>
+
+             <!-- section thirteen -->
+             
+            <div class="section-thirteen">
+             <div class="space">
+                <div class="iwatchh">
+                  <img src="./watch.png" alt="">
+                    <!-- <img src="https://play-lh.googleusercontent.com/muOje5bunpSQX8L8JibfeG2xfy7SV3aWnp_FPaZ4H1IvHUIk60NInXNn6_iQbbzyoTDPjAZGlg=w500-h490-rw" alt=""> -->
+                </div>
+                <div class="iwatch-textt">
+                  <h4>Featured watch faces</h4>
+                  <p>Find your look</p>
+                </div>
+              </div>
+             </div>
+
+             <!-- section-forteen -->
+             <div class="sectionn-forteen">
+                <div class="sec-fort">
+                    <div class="googleplay">
+                        <h3>Google Play</h3>
+                        <p>Play Pass</p>
+                        <p>Play Points</p>
+                        <p>Gift cards</p>
+                        <p>Redeem</p>
+                        <p>Refund policy</p>
+                    </div>
+                    <div class="kids">
+                        <h4>Kids & family</h4>
+                        <p>Parent Guide</p>
+                        <p>Family sharing</p>
+                    </div>
+                </div>
+            </div> 
+
+             <!-- section-fifteen -->
+                <div class="section-fifteen">
+                    <div class="sec-fifth">
+                        <div class="ps">
+                            <p>Terms of Service</p>
+                            <p>Privacy</p>
+                            <p>About Google Play</p>
+                            <p>Developers</p>
+                            <p>Google Store</p>
+                            <p>All prices include VAT.</p>
+                        </div>
+                        <div>
+                            <p>Nigeria (English)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <section></section> -->
+                 <div class="application">
+                    <div class="my-apps">
+                        <div>
+                            <span class="material-symbols-outlined">sports_esports</span>
+                            <p>Games</p>
+                        </div>
+                        <div>
+                            <span class="material-symbols-outlined">apps</span>
+                            <p>Apps</p>
+                        </div>
+                        <div>
+                            <span class="material-symbols-outlined">kid_star</span>
+                            <p>Kids</p>
+                        </div>
+                    </div>
+                    
+                 </div>
+
+
+    </div>
+</body>
+</html>

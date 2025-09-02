@@ -1,0 +1,708 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.top{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+.top-right{
+    display: flex;
+    text-align: center;
+    gap: 25px;   
+    align-items: center;
+}
+.topp p{
+    font-size: 24px;
+    font-family: Google sans, Arial, Helvetica, sans-serif;
+}
+.app{
+    display: flex;
+    gap: 20px;
+}
+.ball{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background-color: green;
+text-align: center;
+color: white;
+align-items: center;
+}
+/* section */
+
+.app::before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    border-radius: 5px;
+    top: 60px;
+    background-color: green;
+    visibility: visible;
+}
+.app:hover::before{
+visibility: visible;
+}
+.top{
+    position: relative;
+}
+/* section */
+
+.question{
+ width: 19px;
+height: 19px;
+border-radius: 50%;
+text-align: center;
+color: black;
+border: thin solid black;
+
+}
+.section-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 2;
+   
+    padding: 12px;
+    /* margin-top: 10px; */
+    box-shadow:0px 1px  10px rgba(0, 0, 0, 0.449);
+    /* box-shadow: ; */
+    
+}
+.section-one p{
+    display: inline-block;
+}
+.section-two{
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 20px;
+    width: 95%;
+   margin: auto;
+   z-index: 1;
+   border: none;
+   cursor: pointer;   
+   
+}
+
+.sec-two{
+    flex-direction: row;
+   display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-top: 20px;
+    cursor: pointer;
+     overflow-x: scroll;
+ scrollbar-width: none;
+}
+.sec-two button:hover{
+    color: green;
+}
+.fifth a{
+color: black;
+}
+.sixty a{
+color: rgba(0, 0, 0, 0.74);
+}
+.app a{
+    color: rgba(0, 0, 0, 0.801);
+}
+.ps a{
+color: rgba(0, 0, 0, 0.753);
+}
+.first button{
+   width: 130px;
+   height:30px ;
+   border-radius: 15px;
+   align-items: center;
+   gap: 20px;
+   padding: 10px;
+    display: flex;
+    border: transparent;   
+}
+.second button{
+   width: 100px;
+   height: 30px;
+   border-radius: 15px;
+   align-items: center;
+   gap: 10px;
+   padding: 10px;
+    display: flex;
+    border: transparent;
+}
+.third button{
+   width: 100px;
+   height: 30px;
+   border-radius: 15px;
+   align-items: center;
+   gap: 20px;
+   padding: 10px;
+    display: flex;
+    border: transparent;
+}
+.fourth button{
+   width: 70px;
+   height: 30px;
+   gap: 20px;
+   border-radius: 15px;
+   align-items: center;   
+   padding: 10px;
+    display: flex;
+    border: transparent;
+}
+.fifth button{
+   width: 120px;
+   height: 30px;
+   gap: 10px;
+   border-radius: 15px;
+   align-items: center;   
+   padding: 10px;
+    display: flex;
+    border: transparent;
+}
+.sixty button{
+   width: 100px;
+   height: 30px;
+   border-radius: 15px;
+   align-items: center;   
+   padding: 10px;
+    display: flex;
+    text-align: center;    
+    gap: 4px;
+    border: transparent;
+   
+}
+.sixty a{
+     display: flex;
+    gap: 10px;
+    align-items: center; 
+}
+.fifth a{
+      display: flex;
+    gap: 10px;
+    align-items: center; 
+}
+.section-two span{
+    font-size: 15px;
+}
+
+
+/* section three*/
+.section-three{
+   width: 95%;
+   margin: auto;
+    border: thin solid black;
+    margin-top: 30px;
+    padding-left: 20px;
+    border: none;
+}
+.sec-three{
+    width: 50%;
+}
+.sec-three h4{
+    font-size: 22px;
+    font-family: google sans, Arial, Helvetica, sans-serif;
+}
+
+/* section */
+
+.section-four{
+ display: flex;
+margin-top: 10px;
+width: 95%;
+margin: auto;
+ flex-wrap: nowrap;
+ overflow: hidden;
+ overflow-x: scroll;
+ scrollbar-width: none;
+
+}
+.first-views:hover{    
+     background-color: whitesmoke;
+     border-radius: 10px;
+}
+.second-views:hover{    
+     background-color: whitesmoke;
+     border-radius: 10px;
+}
+.third-views:hover{    
+     background-color: whitesmoke;
+     border-radius: 10px;
+}
+.fourth-views:hover{    
+     background-color: whitesmoke;
+     border-radius: 10px;
+}
+
+.first-views{
+    border: thin solid black;
+     cursor: pointer;
+     margin-top: 22px;
+     border: none;
+}
+.firstt-views iframe{
+   width: 400px;
+    height: 210px;
+    object-fit: cover;
+   border-radius: 10px;
+    margin: 10px;
+}
+.view-one{
+    display: flex;
+    gap: 20px;
+}
+.view-one img{
+    border-radius: 15%;
+    width: 70px;
+    height: 50px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.text-one{
+    /* display: flex; */
+}
+.text-one h3{
+    font-size: 16px;
+    width: 100%;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+.text-one p{
+    font-size: 14px;    
+    font-family: Roboto;
+    gap: 5px;
+    display: flex;
+    text-align: center;
+}
+.text-one span{
+    /* text-align: center;
+    align-items: center; */
+    font-size: 13px;
+    color: black;
+}
+
+.second-views{
+    border: 1px solid black;
+    margin-left: 5px;
+     cursor: pointer;
+      margin-top: 22px;
+      border: none;
+}
+    .sec-views iframe{
+     width: 400px;
+    height: 210px;
+    object-fit: cover;
+   border-radius: 10px;
+    margin: 10px;
+}
+.view-two{
+    display: flex;
+    gap: 20px;
+}
+
+.text-two h3{
+    font-size: 16px;
+    width: 100%;
+    font-family: Roboto;
+}
+.text-two p{
+    font-size: 14px;   
+     font-family: Roboto; 
+  
+}
+.text-two span{
+    /* text-align: center;
+    align-items: center; */
+    font-size: 13px;
+    color: black;
+}
+.view-two img{
+   
+    border-radius: 15%;
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+}
+/* section */
+
+.third-views{
+     border: thin solid black;
+    margin-left: 5px;
+     cursor: pointer;
+      margin-top: 22px;
+      border: none;
+}
+.thirdd-views iframe{
+   width: 400px;
+    height: 210px;
+    object-fit: cover;
+   border-radius: 10px;
+    margin: 10px;
+}
+.view-three{
+    display: flex;
+    gap: 20px;
+}
+.view-three img{
+    border-radius: 15%;
+    width: 70px;
+    height: 50px;
+}
+.text-three span{
+    font-size: 13px;
+}
+
+.forth-views{
+     border: thin solid black;
+    margin-left: 5px;
+     cursor: pointer;
+      margin-top: 22px;
+      border: none;
+}
+.text-four h3{
+    font-size: 16px;
+    font-family: Roboto;
+}
+.text-four p{
+    font-size: 14px;
+    font-family: Roboto;
+}
+.text-four span{
+    font-size: 13px;
+}
+
+.forthh-views iframe{
+   width: 400px;
+    height: 210px;
+    object-fit: cover;
+   border-radius: 10px;
+    margin: 10px;
+}
+.view-four{
+    display: flex;
+    gap: 20px;
+}
+.view-four img{
+    border-radius: 15%;
+    width: 70px;
+    height: 50px;
+}
+
+.fifth-views{
+    border: thin solid black;
+     cursor: pointer;
+      margin-top: 22px;
+      border: none;
+}
+.fifthh-views iframe{
+   width: 400px;
+    height: 210px;
+    object-fit: cover;
+   border-radius: 10px;
+    margin: 10px;
+}
+.view-five{
+    display: flex;
+    gap: 20px;
+}
+.view-five img{
+    border-radius: 15%;
+    width: 70px;
+    height: 50px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.text-five{
+    /* display: flex; */
+}
+.text-five h3{
+    font-size: 16px;
+    width: 100%;
+     font-family: Roboto;
+}
+.text-five p{
+    font-size: 14px;  
+     font-family: Roboto;  
+  
+}
+.text-five span{
+    font-size: 13px;
+}
+
+/* section */
+.word-five{
+    border: 1px solid black;
+    margin-top: 20px;
+    border: none;
+    }
+
+    .section-five{
+        width: 85%;
+        margin: auto;
+    }
+.word-five{
+     margin-top: 30px;
+   
+}
+
+
+/* section */
+.section-six{
+ display: flex;
+margin-top: 10px;
+width: 95%;
+margin: auto;
+ flex-wrap: nowrap;
+ overflow: hidden;
+ overflow-x: scroll;
+ scrollbar-width: none;
+}
+.firsttt-views img{
+    width: 400px;
+    height: 210px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* section */
+.sectionn-seven{
+    width: 95%;
+    margin: auto;
+}
+.googleplay{
+     font-size: 14px;
+     font-family: google sans;
+ }
+.sec-seven{
+    display: flex;
+   gap: 200px;
+   margin-top: 40px;
+   line-height: 30px;
+}
+.line{
+    margin-top: 70px;
+   
+   }
+   .linee{
+     width: 95%;
+    margin: auto;
+   }
+
+   /* section  */
+   .ps p{
+    display: inline;    
+        
+     }
+    .ps{
+     display: flex;
+    gap: 20px;
+    }
+    
+   .sec-eight{
+    display: flex;
+    margin-top: 30px;    
+    justify-content: space-between;
+   }
+   .section-eight{
+    width: 95%;
+    margin: auto;
+   }
+   .sec-eight p{
+     font-family: google sans, Arial, Helvetica, sans-serif;
+   }
+
+    .application{
+    width: 95%;
+    margin: auto;
+    visibility: hidden;
+   }
+   .my-apps {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    gap:50px ;
+   }
+
+
+
+
+ @media (max-width:840px) {
+        .app p{
+            display: none;
+        }
+        .container{
+            width: 100%;
+        }
+        .section-two{
+            width:100% ;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        .section-two button{
+            width: 100%;
+            display: flex;
+        }
+        .sec-two button{
+            width: 100%;
+        }
+        .section-three h4{
+            width: 90%;
+            font-size: 16px;           
+        }
+        /* .section-four{
+            width: 100%;
+            overflow-x: hidden;
+            margin: auto;
+        } */
+        .section-four iframe{
+            width: 290px;
+            object-fit: cover;
+           height: 180px;
+        }
+
+        .section-six iframe{
+            width: 290px;
+            object-fit: cover;
+           height: 180px;
+        }
+        .firsttt-views img{
+            width: 290px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .sectionn-seven{
+            width: 80%;
+            margin: auto;
+
+        }
+        .sec-seven{           
+            display: block;
+             width: 100%;
+        }
+        .kids{
+            margin-top: 20px;
+        }
+
+        .sec-eight{
+            width: 100%;
+            display: flex;
+           display: block;
+        }
+        .ps{
+            /* display: block; */
+          display: grid;
+          width: 100%;
+          grid-template-columns: 1fr 1fr;
+        }
+        .ps p{
+         width: 100%;
+         font-size: 12px;
+        }
+        .english p{
+            font-size: 12px;
+            margin-top: 20px;
+            font-family: google sans, Arial, Helvetica, sans-serif;
+        }
+
+        .section-eight{
+            width: 80%;
+            margin: auto;
+        }
+        .text-one h3{
+            font-size: 14px;
+        }
+        .text-one p{
+            font-size: 12px;
+        }
+        .text-two h3{
+            font-size: 14px;
+        }
+        .text-two p{
+            font-size: 12px;
+        }
+         .text-three h3{
+            font-size: 14px;
+        }
+        .text-three p{
+            font-size: 12px;
+        }
+        .text-four h3{
+            font-size: 14px;
+        }
+        .text-four p{
+            font-size: 12px;
+        }
+        .googleplay{
+            font-size: 14px;
+        }
+
+             .application{
+            width: 95%;
+            margin: auto;
+            visibility: visible;
+        }
+        .my-apps {
+            margin-top: 20px;
+            display: flex;
+            gap:50px ;
+        }
+
+      
+    }
+
+    @media (max-width:320px) {
+        .topp p{
+            font-size: 17px;
+            width: 100%;
+            flex-wrap: nowrap;
+        }
+        .section-one{
+            /* width:90% ;
+            margin: auto;
+            margin-left: 20px; */
+        }
+        .section-two button{
+            width: 100%;
+        }
+        .sec-three{
+            font-size: 16px;
+            width: 100%;
+            display: inline-block;
+            /* display: block; */
+        }
+        .firstt-views video{
+        width: 60%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 10px;
+        flex-wrap: nowrap;
+        overflow: hidden; 
+    } 
+    .section-seven{
+        margin: auto;
+        width: 95%;
+    }
+    .app::before{
+        visibility: hidden;
+    }
+
+     }
+      
+        
+    
